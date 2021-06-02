@@ -1,11 +1,19 @@
 *
   box-sizing: border-box
+@font-face
+  font-family: "Lato"
+  src: url('../fonts/Lato.woff') format("woff")
+  src: url('../fonts/Lato.woff2') format("woff2")
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
 body
-  font-family: 'Mulish', sans-serif
+  font-family: "Lato", sans-serif
   background-color: $secondary
   color: $text-color
 .container
-  max-width: 1110px
+  max-width: 1140px
   margin: auto
 img
   max-width: 100%
@@ -18,11 +26,11 @@ input, textarea
   color: $text-color
 
   &::placeholder
-    color: #BDBDBD
+    color: #939699
   &:-ms-input-placeholder
-    color: #BDBDBD
+    color: #939699
   &::-webkit-input-placeholder
-    color: #BDBDBD
+    color: #939699
   &::-moz-placeholder
-    color: #BDBDBD
+    color: #939699
     opacity: 1
