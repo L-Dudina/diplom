@@ -7,9 +7,9 @@ $(document).ready(function () {
 
 var menuButton = $(".menu-button"); 
 menuButton.on("click", function () {
-  console.log(1);
   $(".navbar-menu").toggleClass("navbar-menu--visible");
 });
+
 
   AOS.init();
 });

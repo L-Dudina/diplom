@@ -3,16 +3,25 @@
 }
 
 @font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato.woff") format("woff");
-  src: url("../fonts/Lato.woff2") format("woff2");
+  font-family: "lato_light";
+  src: url("../fonts/lato_light.woff") format("woff");
+  src: url("../fonts/lato_light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.woff") format("woff");
+  src: url("../fonts/Lato-Black.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "lato_light", sans-serif;
   background-color: #E5E5E5;
   color: #4B5157;
 }
@@ -24,6 +33,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+a {
+  cursor: pointer;
 }
 
 button {
@@ -399,7 +412,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
 }
 
@@ -420,7 +433,7 @@ template {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 9px 65px;
+  padding: 9px 66px;
   border: none;
   color: #fff;
   text-align: center;
@@ -429,14 +442,16 @@ template {
 .navbar-menu__block {
   list-style-type: none;
   display: flex;
+  position: relative;
+  bottom: 1px;
+  right: 1px;
   color: #fff;
   padding-left: 0;
   margin: 0;
 }
 
 .navbar-menu__item {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 16px;
 }
 
 .navbar-menu__item:first-child {
@@ -452,14 +467,126 @@ template {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 900;
 }
 
 .navbar-menu__item--mobile--visible {
   display: none;
 }
 
+.bgdoor {
+  background-color: #262D33;
+  height: 545px;
+  z-index: -1;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
 .logo {
   width: 163px;
+}
+
+.navigator {
+  position: relative;
+  padding: 28px 0;
+  z-index: 99;
+}
+
+.navigator__block {
+  display: flex;
+  justify-content: space-between;
+  height: 570px;
+  width: 100%;
+}
+
+.navigator__mobile {
+  display: none;
+}
+
+.content__item {
+  position: absolute;
+  width: 877px;
+  height: 570px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+}
+
+.content__image {
+  position: relative;
+  background-image: var(--image-src);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.content__image::after {
+  content: '';
+  background: rgba(64, 48, 61, 0.35);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.content__block {
+  padding-top: 55px;
+  padding-left: 55px;
+}
+
+.content__author {
+  display: flex;
+  align-items: center;
+}
+
+.content__person {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.content__name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.content__vocation {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.tabs {
+  width: 263px;
+  height: 100%;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+.tabs__text {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabs__item {
+  border-top: 1px solid #c1c1c1;
+  padding-left: 25px;
 }
 
 @media (max-width: 1200px) {
@@ -481,6 +608,9 @@ template {
   .logo {
     width: 100px;
   }
+  .bgdoor {
+    height: 405px;
+  }
   .navbar-menu__item {
     margin-right: 8px;
     margin-left: 8px;
@@ -491,6 +621,19 @@ template {
   .navbar__button {
     font-size: 12px;
     padding: 13px 15px;
+  }
+  .navigator__block {
+    height: 386px;
+  }
+  .tabs {
+    width: 200px;
+  }
+  .content__item {
+    width: 615px;
+    height: 386px;
+  }
+  .content__image {
+    background-size: 100% 100%;
   }
 }
 
@@ -556,6 +699,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #fff;
+  }
+  .navigator__block {
+    display: none;
+  }
+  .navigator__mobile {
+    display: block;
   }
 }
 

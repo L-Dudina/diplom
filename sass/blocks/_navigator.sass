@@ -1,0 +1,78 @@
+.navigator
+  position: relative
+  padding: 28px 0
+  z-index: 99
+  &__block
+    display: flex
+    justify-content: space-between
+    height: 570px
+    width: 100%
+  &__mobile
+    display: none
+.content
+  &__item
+    position: absolute
+    width: 877px
+    height: 570px
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    overflow: hidden
+
+  &__image
+    position: relative
+    background-image: var(--image-src)
+    object-fit: cover
+    width: 100%
+    height: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+
+    &::after
+      content: ''
+      background: rgba(64, 48, 61, 0.35)
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+
+  &__block
+    padding-top: 55px
+    padding-left: 55px
+  &__author
+    display: flex
+    align-items: center
+  &__person
+    display: flex
+    flex-direction: column
+    color: $light
+    margin-left: 10px
+  &__name
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+    margin-bottom: 2px
+  &__vocation
+    font-size: 12px
+    line-height: 15px
+    font-weight: 400
+    opacity: 0.4
+.tabs
+  width: 263px
+  height: 100%
+  background-color: $light
+  border-top-right-radius: 10px
+  border-bottom-right-radius: 10px
+  z-index: 1
+  &__text
+    font-family: "Lato-Black", sans-serif
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    letter-spacing: 0.5px
+  &__item
+    border-top: 1px solid #c1c1c1
+    padding-left: 25px

@@ -5,7 +5,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding-top: 15px
+    padding-top: 14px
     padding-bottom: 15px
 
     &__menu-button
@@ -21,7 +21,7 @@
     font-size: 14px
     line-height: 20px
     text-transform: uppercase
-    padding: 9px 65px
+    padding: 9px 66px
     border: none
     color: $light
     text-align: center
@@ -30,13 +30,14 @@
     &__block
       list-style-type: none
       display: flex
+      position: relative
+      bottom: 1px
+      right: 1px
       color: $light
       padding-left: 0
       margin: 0
-
     &__item
-      margin-left: 15px
-      margin-right: 15px
+      margin: 0 16px
       &:first-child
         margin-left: 0px
       &:last-child
@@ -47,15 +48,17 @@
       text-decoration: none
       font-size: 14px
       line-height: 20px
-
+      font-weight: 900
     &__item
       &--mobile
         &--visible
           display: none
+.bgdoor
+  background-color: $dark
+  height: 545px
+  z-index: -1
+  width: 100%
+  display: block
+  position: absolute
 .logo
   width: 163px
-// .navbar
-//   &__button
-//     &--mobile
-//       &--visible
-//         display: none
