@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="bgdoor"></div>
     <header class="navbar navbar--mobile--fixed">
-      <div class="bgdoor"></div>
       <div class="navbar-button">
         <div class="container">
           <div class="navbar-box">
@@ -66,7 +66,7 @@
       <div class="container">
         <div class="navigator__block">
           <div class="content">
-            <div class="content__item content__item--active">
+            <div id="tab-1" class="content__item content__item--active">
               <div class="content__image" style="--image-src: url(/img/content-image-1.jpg)"></div>
               <div class="content__block">
                 <div class="content__author">
@@ -81,8 +81,8 @@
                 <div class="content__info">
                   <span class="content__topic">Javascript</span>
                   <h1 class="content__title">Расширение Chrome защищает от атак</h1>
-                  <a href="#" class="button"
-                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="arrow"
+                  <a href="#" class="button content__button"
+                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
                   /></a>
                 </div>
                 <!-- /.content__info -->
@@ -90,7 +90,71 @@
               <!-- /.content__block -->
             </div>
             <!-- /.content__item--active -->
-            <div class="content__item">
+
+            <div id="tab-2" class="content__item">
+              <div class="content__image" style="--image-src: url(/img/content-image-2.jpg)"></div>
+              <div class="content__block">
+                <div class="content__author">
+                  <img src="img/avatar-2.png" alt="Icon: Алексей Смелов" class="content__avatar" />
+                  <div class="content__person">
+                    <span class="content__name">Алексей Смелов</span>
+                    <span class="content__vocation">Разработчик</span>
+                  </div>
+                </div>
+                <div class="content__info">
+                  <span class="content__topic">Javascript</span>
+                  <h1 class="content__title">На каком стандарте писать скрипты, если я фрилансер</h1>
+                  <a href="#" class="button content__button"
+                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab-3" class="content__item">
+              <div class="content__image" style="--image-src: url(/img/content-image-2.jpg)"></div>
+              <div class="content__block">
+                <div class="content__author">
+                  <img src="img/avatar-2.png" alt="Icon: Алексей Смелов" class="content__avatar" />
+                  <div class="content__person">
+                    <span class="content__name">Алексей Смелов</span>
+                    <span class="content__vocation">Разработчик</span>
+                  </div>
+                </div>
+                <div class="content__info">
+                  <span class="content__topic">html</span>
+                  <h1 class="content__title">Правильно вставляем картинку на сайт для Retina дисплея</h1>
+                  <a href="#" class="button content__button"
+                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <!-- /.content__item -->
+
+            <div id="tab-4" class="content__item">
+              <div class="content__image" style="--image-src: url(/img/content-image-2.jpg)"></div>
+              <div class="content__block">
+                <div class="content__author">
+                  <img src="img/avatar-3.png" alt="Icon: Наталья Романова" class="content__avatar" />
+                  <div class="content__person">
+                    <span class="content__name">Наталья Романова</span>
+                    <span class="content__vocation">Дизайнер</span>
+                  </div>
+                </div>
+                <div class="content__info">
+                  <span class="content__topic">Web design</span>
+                  <h1 class="content__title">ТОП-10 плагинов для Figma</h1>
+                  <a href="#" class="button content__button"
+                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <!-- /.content__item -->
+
+            <div id="tab-5" class="content__item">
+              <div class="content__image" style="--image-src: url(/img/content-image-2.jpg)"></div>
               <div class="content__block">
                 <div class="content__author">
                   <img src="img/avatar-1.png" alt="Icon: Давид Гуров" class="content__avatar" />
@@ -98,98 +162,93 @@
                     <span class="content__name">Давид Гуров</span>
                     <span class="content__vocation">Разработчик</span>
                   </div>
-                  <!-- /.content__person -->
                 </div>
-                <!-- /.content__author -->
                 <div class="content__info">
-                  <span class="content__topic">Javascript</span>
-                  <h1 class="content__title">Расширение Chrome защищает от атак</h1>
-                  <a href="#" class="button"></a>
+                  <span class="content__topic">CSS</span>
+                  <h1 class="content__title">Возможности CSS Grid Layout , которые уже можно применять</h1>
+                  <a href="#" class="button content__button"
+                    >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+                  /></a>
                 </div>
               </div>
             </div>
-            <!-- /.content__item -->
-            <div class="content__item">
-              <div class="content__author">
-                <img src="img/avatar-1.png" alt="Icon: Давид Гуров" class="content__avatar" />
-                <span class="content__name">Давид Гуров</span>
-                <span class="content__vocation">Разработчик</span>
-              </div>
-              <!-- /.content__author -->
-              <div class="content__block">
-                <span class="content__topic">Javascript</span>
-                <h1 class="content__title">Расширение Chrome защищает от атак</h1>
-                <a href="#" class="button"></a>
-              </div>
-            </div>
-            <!-- /.content__item -->
-            <div class="content__item">
-              <div class="content__author">
-                <img src="img/avatar-1.png" alt="Icon: Давид Гуров" class="content__avatar" />
-                <span class="content__name">Давид Гуров</span>
-                <span class="content__vocation">Разработчик</span>
-              </div>
-              <!-- /.content__author -->
-              <div class="content__block">
-                <span class="content__topic">Javascript</span>
-                <h1 class="content__title">Расширение Chrome защищает от атак</h1>
-                <a href="#" class="button"></a>
-              </div>
-            </div>
-            <!-- /.content__item -->
-            <!-- <div class="content__item">
-              <div class="content__author">
-                <img src="img/avatar-1.png" alt="Icon: Давид Гуров" class="content__avatar" />
-                <span class="content__name">Давид Гуров</span>
-                <span class="content__vocation">Разработчик</span>
-              </div> -->
-            <!-- /.content__author -->
-            <!-- <div class="content__block">
-                <span class="content__topic">Javascript</span>
-                <h1 class="content__title">Расширение Chrome защищает от атак</h1>
-                <a href="#" class="button"></a>
-              </div>
-            </div> -->
             <!-- /.content__item -->
           </div>
           <!-- /.content -->
           <div class="tabs">
             <h2 class="tabs__text">Рекомендуем</h2>
-            <div class="tabs__item tabs__item--active">
-              <h3 class="tabs__title">css</h3>
+            <div data-target="#tab-1" class="tabs__item tabs__item--active">
+              <h3 class="tabs__title tabs__title--blue">css</h3>
               <span class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</span>
             </div>
             <!-- /.tabs__item -->
-            <div class="tabs__item">
-              <h3 class="tabs__title">javascript</h3>
+            <div data-target="#tab-2" class="tabs__item">
+              <h3 class="tabs__title tabs__title--grey">javascript</h3>
               <span class="tabs__subtitle">На каком стандарте писать скрипты, если я фрилансер</span>
             </div>
             <!-- /.tabs__item -->
-            <div class="tabs__item">
-              <h3 class="tabs__title">html</h3>
+            <div data-target="#tab-3" class="tabs__item">
+              <h3 class="tabs__title tabs__title--purple">html</h3>
               <span class="tabs__subtitle">Правильно вставляем картинку на сайт для Retina дисплея</span>
             </div>
             <!-- /.tabs__item -->
-            <div class="tabs__item">
-              <h3 class="tabs__title">css</h3>
-              <span class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</span>
+            <div data-target="#tab-4" class="tabs__item tabs__item--recede">
+              <h3 class="tabs__title tabs__title--orange">Web design</h3>
+              <span class="tabs__subtitle">ТОП-10 плагинов для Figma</span>
             </div>
             <!-- /.tabs__item -->
-            <div class="tabs__item">
-              <h3 class="tabs__title">css</h3>
-              <span class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</span>
-            </div>
-            <!-- /.tabs__item -->
-            <div class="tabs__item">
-              <h3 class="tabs__title">css</h3>
-              <span class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</span>
+            <div data-target="#tab-5" class="tabs__item tabs__item--pb">
+              <h3 class="tabs__title tabs__title--green">css</h3>
+              <span class="tabs__subtitle">Возможности CSS Grid Layout , которые уже можно применять</span>
             </div>
             <!-- /.tabs__item -->
           </div>
           <!-- /.tabs -->
         </div>
-        <div class="navigator__mobile"></div>
         <!-- /.navigator__block -->
+        <div class="navigator__mobile">
+          <h2 class="tabs__text tabs__text--pt">Рекомендуем</h2>
+          <div class="tabs__list">
+            <h3 class="tabs__title tabs__title--blue">css</h3>
+            <span class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</span>
+            <a href="#" class="button tabs__button"
+              >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+            /></a>
+          </div>
+          <!-- /.tabs__list -->
+          <div class="tabs__list">
+            <h3 class="tabs__title tabs__title--grey">javascript</h3>
+            <span class="tabs__subtitle">На каком стандарте писать скрипты, если я фрилансер</span>
+            <a href="#" class="button tabs__button"
+              >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+            /></a>
+          </div>
+          <!-- /.tabs__list -->
+          <div class="tabs__list">
+            <h3 class="tabs__title tabs__title--purple">html</h3>
+            <span class="tabs__subtitle">Правильно вставляем картинку на сайт для Retina дисплея</span>
+            <a href="#" class="button tabs__button"
+              >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+            /></a>
+          </div>
+          <!-- /.tabs__list -->
+          <div class="tabs__list">
+            <h3 class="tabs__title tabs__title--orange">Web design</h3>
+            <span class="tabs__subtitle">ТОП-10 плагинов для Figma</span>
+            <a href="#" class="button tabs__button"
+              >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+            /></a>
+          </div>
+          <!-- /.tabs__list -->
+          <div class="tabs__list">
+            <h3 class="tabs__title tabs__title--green">css</h3>
+            <span class="tabs__subtitle">Возможности CSS Grid Layout , которые уже можно применять</span>
+            <a href="#" class="button tabs__button"
+              >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="content__arrow"
+            /></a>
+          </div>
+          <!-- /.tabs__list -->
+        </div>
       </div>
       <!-- /.container -->
     </section>

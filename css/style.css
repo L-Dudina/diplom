@@ -502,15 +502,22 @@ template {
 
 .navigator__mobile {
   display: none;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
 .content__item {
+  display: none;
   position: absolute;
   width: 877px;
   height: 570px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   overflow: hidden;
+}
+
+.content__item--active {
+  display: block;
 }
 
 .content__image {
@@ -536,8 +543,16 @@ template {
 }
 
 .content__block {
+  position: absolute;
+  top: 0;
   padding-top: 55px;
   padding-left: 55px;
+}
+
+.content__avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .content__author {
@@ -566,6 +581,48 @@ template {
   opacity: 0.4;
 }
 
+.content__info {
+  margin-top: 141px;
+}
+
+.content__topic {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4592FF;
+}
+
+.content__title {
+  width: 79%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.content__button {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 20px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  margin-top: 18px;
+}
+
+.content__arrow {
+  margin-left: 5px;
+}
+
 .tabs {
   width: 263px;
   height: 100%;
@@ -582,11 +639,90 @@ template {
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  padding-left: 24px;
+  margin-top: 21px;
+  margin-bottom: 18px;
+}
+
+.tabs__text--pt {
+  padding-top: 15px;
 }
 
 .tabs__item {
-  border-top: 1px solid #c1c1c1;
-  padding-left: 25px;
+  border-top: 1px solid #D9DADB;
+  padding: 17px 30px 19px 25px;
+  cursor: pointer;
+}
+
+.tabs__item--active {
+  background-color: #F5F5F5;
+}
+
+.tabs__item--recede {
+  padding-bottom: 40px;
+}
+
+.tabs__item--pb {
+  padding-bottom: 32px;
+  border-bottom-right-radius: 10px;
+}
+
+.tabs__title {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  margin-bottom: 8px;
+}
+
+.tabs__title--blue {
+  color: #3BBDC4;
+}
+
+.tabs__title--grey {
+  color: #6E99AE;
+}
+
+.tabs__title--purple {
+  color: #AC8EE3;
+}
+
+.tabs__title--orange {
+  color: #FFA34D;
+}
+
+.tabs__title--green {
+  color: #3DC47E;
+}
+
+.tabs__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.tabs__list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #D9DADB;
+  padding: 15px 30px;
+}
+
+.tabs__button {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 9px 15px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  margin-top: 18px;
+  width: 132px;
 }
 
 @media (max-width: 1200px) {
@@ -635,6 +771,45 @@ template {
   .content__image {
     background-size: 100% 100%;
   }
+  .content__block {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .content__avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .content__name {
+    font-size: 12px;
+  }
+  .content__vocation {
+    font-size: 10px;
+  }
+  .content__info {
+    margin-top: 90px;
+  }
+  .content__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .tabs__text {
+    font-size: 10px;
+    margin: 5px 0;
+    padding-left: 12px;
+  }
+  .tabs__item {
+    padding: 7px 12px;
+    height: 71px;
+  }
+  .tabs__title {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .tabs__subtitle {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -647,7 +822,7 @@ template {
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 100;
   }
   .navbar-box__menu-button {
     display: flex;
@@ -659,7 +834,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 59px;
+    top: 57px;
     padding-top: 15px;
     text-align: center;
   }
@@ -699,6 +874,9 @@ template {
     width: 16px;
     height: 1px;
     background-color: #fff;
+  }
+  .navigator {
+    padding-top: 85px;
   }
   .navigator__block {
     display: none;
