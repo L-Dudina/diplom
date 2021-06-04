@@ -7,10 +7,6 @@
     justify-content: space-between
     height: 570px
     width: 100%
-  &__mobile
-    display: none
-    background-color: $light
-    border-radius: 6px
 
 .content
   &__item
@@ -155,20 +151,61 @@
     font-size: 14px
     line-height: 20px
     letter-spacing: 0.1px
-  &__list
-    display: flex
-    flex-direction: column
-    border-top: 1px solid #D9DADB
-    padding: 15px 30px
-  &__button
-    font-family: "Lato-Black", sans-serif
-    font-weight: 900
-    font-size: 12px
-    line-height: 16px
-    text-decoration: none
-    color: #fff
-    padding: 9px 15px
-    background-color: $blue
-    border-radius: 20px
-    margin-top: 18px
-    width: 132px
+
+.mobile
+  &-tabs
+    display: none
+    background-color: $light
+    border-radius: 6px
+    &__list
+      display: flex
+      flex-direction: column
+      border-top: 1px solid #D9DADB
+      padding: 15px 30px
+    &__text
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      text-transform: uppercase
+      letter-spacing: 0.5px
+      padding-left: 24px
+      margin-top: 21px
+      margin-bottom: 18px
+      &--pt
+        padding-top: 15px
+    &__title
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin-top: 1px
+      margin-bottom: 8px
+      &--blue
+        color: #3BBDC4
+      &--grey
+        color: #6E99AE
+      &--purple
+        color: #AC8EE3
+      &--orange
+        color: #FFA34D
+      &--green
+        color: #3DC47E
+    &__subtitle
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.1px
+    &__button
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 12px
+      line-height: 16px
+      text-decoration: none
+      color: #fff
+      padding: 9px 15px
+      background-color: $blue
+      border-radius: 20px
+      margin-top: 18px
+      width: 132px

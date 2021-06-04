@@ -500,12 +500,6 @@ template {
   width: 100%;
 }
 
-.navigator__mobile {
-  display: none;
-  background-color: #fff;
-  border-radius: 6px;
-}
-
 .content__item {
   display: none;
   position: absolute;
@@ -704,14 +698,73 @@ template {
   letter-spacing: 0.1px;
 }
 
-.tabs__list {
+.mobile-tabs {
+  display: none;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.mobile-tabs__list {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #D9DADB;
   padding: 15px 30px;
 }
 
-.tabs__button {
+.mobile-tabs__text {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-left: 24px;
+  margin-top: 21px;
+  margin-bottom: 18px;
+}
+
+.mobile-tabs__text--pt {
+  padding-top: 15px;
+}
+
+.mobile-tabs__title {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  margin-bottom: 8px;
+}
+
+.mobile-tabs__title--blue {
+  color: #3BBDC4;
+}
+
+.mobile-tabs__title--grey {
+  color: #6E99AE;
+}
+
+.mobile-tabs__title--purple {
+  color: #AC8EE3;
+}
+
+.mobile-tabs__title--orange {
+  color: #FFA34D;
+}
+
+.mobile-tabs__title--green {
+  color: #3DC47E;
+}
+
+.mobile-tabs__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.mobile-tabs__button {
   font-family: "Lato-Black", sans-serif;
   font-weight: 900;
   font-size: 12px;
@@ -881,7 +934,7 @@ template {
   .navigator__block {
     display: none;
   }
-  .navigator__mobile {
+  .mobile-tabs {
     display: block;
   }
 }
