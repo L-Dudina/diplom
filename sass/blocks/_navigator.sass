@@ -126,7 +126,7 @@
     &--recede
       padding-bottom: 40px
     &--pb
-      padding-bottom: 32px
+      padding-bottom: 27px
       border-bottom-right-radius: 10px
   &__title
     font-family: "Lato-Black", sans-serif
@@ -151,7 +151,13 @@
     font-size: 14px
     line-height: 20px
     letter-spacing: 0.1px
-
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -moz-box-orient: vertical
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+    margin: 0
 .mobile
   &-tabs
     display: none

@@ -444,15 +444,13 @@ template {
   list-style-type: none;
   display: flex;
   position: relative;
-  bottom: 1px;
-  right: 1px;
   color: #fff;
   padding-left: 0;
   margin: 0;
 }
 
 .navbar-menu__item {
-  margin: 0 16px;
+  margin: 0 15px;
 }
 
 .navbar-menu__item:first-child {
@@ -464,6 +462,7 @@ template {
 }
 
 .navbar-menu__link {
+  font-family: "Lato-Black", sans-serif;
   color: inherit;
   text-decoration: none;
   font-size: 14px;
@@ -658,7 +657,7 @@ template {
 }
 
 .tabs__item--pb {
-  padding-bottom: 32px;
+  padding-bottom: 27px;
   border-bottom-right-radius: 10px;
 }
 
@@ -697,6 +696,11 @@ template {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }
 
 .mobile-tabs {
@@ -900,9 +904,13 @@ template {
   .navbar-menu__block--mobile--visible {
     display: block;
   }
+  .navbar-menu__item {
+    margin: 0;
+    align-items: center;
+  }
   .navbar-menu__link {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 35px;
   }
   .navbar__button--mobile--visible {
     display: block;
@@ -930,7 +938,7 @@ template {
     background-color: #fff;
   }
   .navigator {
-    padding-top: 85px;
+    padding-top: 60px;
   }
   .navigator__block {
     display: none;
@@ -943,6 +951,49 @@ template {
 @media (max-width: 480px) {
   .container {
     max-width: 88%;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navbar-menu__link {
+    position: relative;
+  }
+  .navbar-menu__link:after {
+    content: "";
+    height: 2px;
+    background: #4592FF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    opacity: 0;
+    transform-origin: left center;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    transform: scaleX(0);
+  }
+  .navbar-menu__link:hover:after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  .navbar__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .navbar__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(19, 40, 145, 0.75);
+  }
+  .content__button {
+    background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+  }
+  .content__button:hover {
+    background-position: 0 0;
+    box-shadow: 0 4px 15px 0 rgba(19, 40, 145, 0.75);
   }
 }
 /*# sourceMappingURL=style.css.map */
