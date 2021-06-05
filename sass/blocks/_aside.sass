@@ -1,0 +1,32 @@
+.aside
+  padding: 30px 0
+  &__block
+    display: flex
+    align-items: center
+    border-right: 1px solid #4B5157
+    margin-top: 25px
+    margin-bottom: 28px
+    margin-left: 25px
+    padding-right: 6px
+  &__container
+    background-color: #30363D
+    border-radius: 10px
+    display: flex
+    justify-content: space-around
+  &__news
+    &:last-child
+      &>.aside__block
+        border-right: none
+  &__topic
+    max-width: 152px
+    font-family: "Lato-Black", sans-serif
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+    margin-top: 10px
+  &__image
+    width: 65px
+    height: 65px
+    object-fit: cover
+    margin: 5px 20px 5px 15px

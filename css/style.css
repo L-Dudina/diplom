@@ -489,7 +489,7 @@ template {
 
 .navigator {
   position: relative;
-  padding: 28px 0;
+  padding-top: 28px;
   z-index: 99;
 }
 
@@ -783,6 +783,48 @@ template {
   width: 132px;
 }
 
+.aside {
+  padding: 30px 0;
+}
+
+.aside__block {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #4B5157;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  margin-left: 25px;
+  padding-right: 6px;
+}
+
+.aside__container {
+  background-color: #30363D;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside__news:last-child > .aside__block {
+  border-right: none;
+}
+
+.aside__topic {
+  max-width: 152px;
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.aside__image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin: 5px 20px 5px 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -792,6 +834,20 @@ template {
   }
   .navbar__button {
     padding: 9px 18px;
+  }
+  .aside__news {
+    display: flex;
+  }
+  .aside__block {
+    margin-left: 20px;
+  }
+  .aside__topic {
+    max-width: 140px;
+    font-size: 12px;
+  }
+  .aside__image {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -867,6 +923,24 @@ template {
   }
   .tabs__subtitle {
     font-size: 12px;
+  }
+  .aside__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: none;
+  }
+  .aside__news {
+    width: 315px;
+    justify-content: center;
+    background-color: #30363D;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  .aside__block {
+    border-bottom: 1px solid #4B5157;
+    border-right: none;
+    margin-left: 0;
   }
 }
 
@@ -946,11 +1020,37 @@ template {
   .mobile-tabs {
     display: block;
   }
+  .aside__news {
+    width: 250px;
+  }
+  .aside__image {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aside__news {
+    width: 100%;
+  }
+  .aside__topic {
+    max-width: 187px;
+    font-size: 14px;
+  }
+  .aside__image {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 88%;
+  }
+}
+
+@media (max-width: 380px) {
+  .aside__topic {
+    max-width: 160px;
   }
 }
 

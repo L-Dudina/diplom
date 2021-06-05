@@ -6,6 +6,17 @@
   .navbar
     &__button
       padding: 9px 18px
+  .aside
+    &__news
+      display: flex
+    &__block
+      margin-left: 20px
+    &__topic
+      max-width: 140px
+      font-size: 12px
+    &__image
+      width: 50px
+      height: 50px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -64,6 +75,22 @@
       margin-bottom: 0
     &__subtitle
       font-size: 12px
+  .aside
+    &__container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      background: none
+    &__news
+      width: 315px
+      justify-content: center
+      background-color: #30363D
+      margin-bottom: 25px
+      border-radius: 10px
+    &__block
+      border-bottom: 1px solid #4B5157
+      border-right: none
+      margin-left: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -136,8 +163,21 @@
   .mobile
     &-tabs
       display: block
-// @media ( max-width: 576px)
-
+  .aside
+    &__news
+      width: 250px
+    &__image
+      margin-right: 5px
+@media ( max-width: 576px)
+  .aside
+    &__news
+      width: 100%
+    &__topic
+      max-width: 187px
+      font-size: 14px
+    &__image
+      width: 60px
+      height: 60px
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -146,8 +186,10 @@
 
 // @media (max-width: 400px)
 
-// @media ( max-width: 380px)
-
+@media ( max-width: 380px)
+  .aside
+    &__topic
+      max-width: 160px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
