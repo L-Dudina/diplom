@@ -79,18 +79,25 @@
     &__container
       display: flex
       flex-wrap: wrap
-      justify-content: space-between
+      justify-content: center
       background: none
     &__news
-      width: 315px
+      width: 350px
       justify-content: center
       background-color: #30363D
-      margin-bottom: 25px
-      border-radius: 10px
+      margin-bottom: 15px
+      &:nth-child(even)
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+
+      &:nth-child(odd)
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+        border-right: 1px solid #4B5157
     &__block
-      border-bottom: 1px solid #4B5157
       border-right: none
       margin-left: 0
+
   .parallax
     &-title
       font-size: 33px
@@ -169,7 +176,9 @@
       display: block
   .aside
     &__news
-      width: 250px
+      width: 288px
+    &__topic
+      max-width: 130px
     &__image
       margin-right: 5px
   .parallax
@@ -180,16 +189,23 @@
       font-size: 12px
       line-height: 16px
       padding: 9px 15px
-@media ( max-width: 576px)
+@media ( max-width: 626px)
   .aside
     &__news
       width: 100%
+      border-radius: 10px
+      &:last-child
+        &>.aside__block
+          border-bottom: none
+    &__block
+      border-bottom: 1px solid #4B5157
     &__topic
       max-width: 187px
       font-size: 14px
     &__image
       width: 60px
       height: 60px
+@media ( max-width: 576px)
   .parallax
     height: 245px
     &-title
@@ -199,8 +215,10 @@
   .container
     max-width: 88%
   .parallax
+    &-wrapper
+      margin: 0 12px
     &-title
-      font-size: 16px
+      font-size: 18px
       line-height: 30px
 
 // @media (max-width: 455px)
@@ -211,10 +229,6 @@
   .aside
     &__topic
       max-width: 160px
-  .parallax
-    &-title
-      font-size: 13px
-      line-height: 25px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
@@ -252,3 +266,29 @@
       &:hover
         background-position: 0 0
         box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+  .aside
+    &__topic
+      &:hover
+        color: $blue
+  .parallax
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+  .articles
+    &-nine
+      &__teg
+        &-item
+          &:hover
+            color: $bluegreen
+            border: 1px solid $bluegreen
+    &-ten
+      &__social
+        &-image
+          &>img:hover
+            transform: scale(1.1)
+            opacity: 0.8

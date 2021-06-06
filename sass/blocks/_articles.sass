@@ -1,0 +1,325 @@
+.articles
+  padding-bottom: 60px
+  &__grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(4, 170px)
+    gap: 30px 30px
+  &-one
+    background-color: $light
+    grid-area: 1 / 1 / 3 / 3
+    border-radius: 10px
+  &__article
+    font-family: "Lato-Black", sans-serif
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    &--gray
+      color: $gray
+    &--violet
+      color: #E7D9FF
+  &-text
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.1px
+    margin: 0
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -moz-box-orient: vertical
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+    &__one
+      -webkit-line-clamp: 4
+  &__mini
+    &-box
+      padding: 25px 25px 30px 25px
+      background-color: $light
+      border-radius: 10px
+  &-title
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
+    font-size: 16px
+    line-height: 25px
+    color: $dark
+    margin-top: 0
+    margin-bottom: 5px
+  &-data
+    display: block
+    font-size: 12px
+    line-height: 15px
+    color: $lightgray
+    margin-top: 10px
+    &--mt
+      margin-top: 30px
+  &-like
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    opacity: 0.4
+  &__box
+    &-one
+      display: flex
+      padding-left: 35px
+  &__content
+    margin-top: 32px
+  &__title
+    &-one
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 25px
+      line-height: 30px
+      color: $dark
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -moz-box-orient: vertical
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-bottom: 24px
+  &__image
+    &-one
+      width: 292px
+      height: 299px
+      margin-top: 15px
+      border-top-right-radius: 10px
+  &__text-one
+    -webkit-line-clamp: 4
+  &__line
+    margin-top: 0
+    border: none
+    background-color: $line
+    height: 1px
+    color: $line
+  &__author
+    display: flex
+    align-items: center
+    padding-left: 35px
+    margin-top: 12px
+  &__avatar
+    height: 30px
+    width: 30px
+    object-fit: cover
+    border-radius: 50%
+    margin-right: 10px
+  &__name
+    font-family: "Lato-Black", sans-serif
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+    margin-right: 5px
+  &__topic
+    width: 284px
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.1px
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -moz-box-orient: vertical
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+  &__comment
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    margin-left: 5px
+    &-image
+      margin-left: 16px
+  &-two
+    grid-area: 3 / 1 / 5/ 2
+    border-radius: 10px
+    &__box
+      display: flex
+      flex-direction: column
+    &__image
+      width: 263px
+      height: 275px
+      object-fit: cover
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+    &__holder
+      padding-bottom: 25px
+      padding-left: 26px
+      background-color: $light
+      border-bottom-left-radius: 10px
+      border-bottom-right-radius: 10px
+    &__title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      width: 185px
+      margin-top: 15px
+  &-three
+    grid-area: 3 / 2 / 4 / 3
+  &-four
+    grid-area: 4 / 2 / 5 / 3
+  &-five
+    grid-area: 1 / 3 / 3 / 4
+    position: relative
+    &__bg
+      position: absolute
+      background: rgba(64, 48, 61, 0.35)
+      width: 262px
+      height: 370px
+      border-radius: 10px
+    &__image
+      position: absolute
+      width: 263px
+      height: 370px
+      border-radius: 10px
+      object-fit: cover
+      z-index: -1
+    &__box
+      position: absolute
+      top: 0
+      padding: 21px 20px 20px 25px
+    &__note
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      padding: 5px 12px
+      background-color: $green
+      border-radius: 3px
+    &__topic
+      margin-top: 117px
+    &__title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $light
+      margin-top: 23px
+    &__author
+      display: flex
+      align-items: center
+      margin-top: 27px
+    &__avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      object-fit: cover
+      margin-right: 10px
+    &__name
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+    &__data
+      display: inline-block
+      color: $light
+      opacity: 0.4
+      margin-top: 1px
+      margin-bottom: 2px
+    &__comment
+      color: $light
+      opacity: 0.4
+      margin-left: 5px
+      bottom: 1px
+      &-mr
+        position: relative
+        top: 2px
+        margin-right: 5px
+    &__like
+      position: relative
+      top: 2px
+      margin-right: 5px
+  &-six
+    grid-area: 3 / 3 / 4 / 4
+  &-seven
+    grid-area: 4 / 3 / 5 / 4
+  &-eight
+    grid-area: 1 / 4 / 2/ 5
+    &__box
+      position: relative
+      display: flex
+      flex-direction: column
+      background-color: $bluegreen
+      border-top-right-radius: 10px
+      border-top-left-radius: 10px
+      padding: 25px 25px 19px 25px
+    &__title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 16px
+      line-height: 25px
+      color: $light
+      margin-top: 0
+      margin-bottom: 10px
+    &__pdf-size
+      font-size: 14px
+      line-height: 20px
+      color: #C1F4F5
+    &__download
+      display: flex
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      padding: 12px 90px 13px 90px
+      background-color: $bluegreen
+      border-bottom-right-radius: 10px
+      border-bottom-left-radius: 10px
+      border-top: 1px solid rgba(150, 226, 227, 0.75)
+      &-icon
+        margin-right: 9px
+    &__image
+      position: absolute
+      right: 10px
+      top: 20px
+      opacity: 0.5
+  &-nine
+    grid-area: 2 / 4 / 4 / 5
+    background-color: $light
+    border-radius: 10px
+    &__title
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      padding: 20px 25px 19px
+      border-bottom: 1px solid $line
+      margin: 0
+    &__tegs
+      padding: 16px 13px 25px 21px
+    &__teg
+      display: inline-block
+      margin: 12px 3px
+      &-item
+        font-family: "Lato-Black", sans-serif
+        font-size: 14px
+        line-height: 20px
+        font-weight: 900
+        color: $dark
+        padding: 7px 14px
+        border: 1px solid $line
+        border-radius: 5px
+  &-ten
+    grid-area: 4 / 4 / 5 / 5
+    &__box
+      padding: 20px 36px 36px 37px
+      border-radius: 10px
+      background-color: $light
+    &__title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 20px
+      line-height: 25px
+      text-align: center
+      margin-top: 10px
+      margin-bottom: 25px
+    &__social
+      &-image
+        margin-right: 15px
+        &:last-child
+          margin-right: 0

@@ -25,7 +25,7 @@
             <div class="navbar-menu">
               <ul class="navbar-menu__block navbar-menu__block--mobile--visible">
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="#" class="navbar-menu__link">Статьи</a>
+                  <a href="#articles" class="navbar-menu__link">Статьи</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
                   <a href="#" class="navbar-menu__link">Новости</a>
@@ -63,6 +63,7 @@
         <!-- /.container -->
       </div>
     </header>
+    <!-- /.header -->
     <section class="navigator">
       <div class="container">
         <div class="navigator__block">
@@ -129,7 +130,6 @@
               </div>
             </div>
             <!-- /.content__item -->
-
             <div id="tab-4" class="content__item">
               <div class="content__image" style="--image-src: url(../img/content-image-2.jpg)"></div>
               <div class="content__block">
@@ -175,12 +175,12 @@
           <div class="tabs">
             <h2 class="tabs__text">Рекомендуем</h2>
             <div data-target="#tab-1" class="tabs__item tabs__item--active">
-              <h3 class="tabs__title tabs__title--blue">css</h3>
+              <h3 class="tabs__title tabs__title--bluegreen">css</h3>
               <p class="tabs__subtitle">Как использовать CSS float после того, как вышел Flexbox</p>
             </div>
             <!-- /.tabs__item -->
             <div data-target="#tab-2" class="tabs__item">
-              <h3 class="tabs__title tabs__title--grey">javascript</h3>
+              <h3 class="tabs__title tabs__title--gray">javascript</h3>
               <p class="tabs__subtitle">На каком стандарте писать скрипты, если я фрилансер</p>
             </div>
             <!-- /.tabs__item -->
@@ -214,7 +214,7 @@
           </div>
           <!-- /.mobile-tabs -->
           <div class="mobile-tabs__list">
-            <h3 class="mobile-tabs__title mobile-tabs__title--grey">javascript</h3>
+            <h3 class="mobile-tabs__title mobile-tabs__title--gray">javascript</h3>
             <span class="mobile-tabs__subtitle">На каком стандарте писать скрипты, если я фрилансер</span>
             <a href="#" class="button mobile-tabs__button"
               >Читать далее <img src="img/Arrow.svg" alt="Icon: arrow" class="mobile-tabs__arrow"
@@ -255,7 +255,7 @@
         <div class="aside__container">
           <div class="aside__news">
             <div class="aside__block">
-              <a href="#"> <h2 class="aside__topic">25 способов настроить слайдер</h2></a>
+              <a href="#"><h2 class="aside__topic">25 способов настроить слайдер</h2></a>
               <a href="#"><img src="img/aside-image-1.png" alt="aside-image" class="aside__image" /></a>
             </div>
           </div>
@@ -280,14 +280,200 @@
         </div>
       </div>
     </section>
+    <!-- /.aside -->
+    <section id="articles" class="articles">
+      <div class="container">
+        <div class="articles__grid">
+          <div class="articles-one">
+            <div class="articles__box-one">
+              <div class="articles__content">
+                <span class="articles__article articles__article--gray">Статьи</span>
+                <h2 class="articles__title-one">Вам предложили работу мечты, но вы не можете...</h2>
+                <p class="articles-text articles__text-one">
+                  Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и
+                  переезжать вы не готовы.
+                </p>
+              </div>
+              <img src="img/articles-1.png" alt="Foto: Статья-1" class="articles__image-one" />
+            </div>
+            <hr class="articles__line" />
+            <div class="articles__author">
+              <img src="img/articles-avatar.png" alt="Инна Квашова" class="articles__avatar" />
+              <span class="articles__name">Инна Квашова:</span>
+              <span class="articles__topic">Каждый разработчик мечтает переехать в...</span>
+              <img src="img/Comment-gray.svg" alt="Icon: Комментарий" class="articles__comment-image" />
+              <span class="articles__comment">342</span>
+            </div>
+          </div>
+          <div class="articles-two">
+            <div class="articles-two__box">
+              <img src="img/articles-2.png" alt="Foto: Статья-2" class="articles-two__image" />
+              <div class="articles-two__holder">
+                <h2 class="articles-two__title articles-title">20+ инструментов для js-разработчика</h2>
+              </div>
+            </div>
+          </div>
+          <div class="articles-three">
+            <div class="articles__mini-box">
+              <h2 class="articles-title">Удачные референсы</h2>
+              <p class="articles-text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+              <span class="articles-data">15 октября</span>
+            </div>
+          </div>
+          <div class="articles-four">
+            <div class="articles__mini-box">
+              <h2 class="articles-title">Работа без стресса — это...</h2>
+              <p class="articles-text">
+                Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...
+              </p>
+              <span class="articles-data">26 октября</span>
+            </div>
+          </div>
+          <div class="articles-five">
+            <div class="articles-five__bg">
+              <img src="img/articles-3.jpg" alt="Статья-3" class="articles-five__image" />
+            </div>
+            <div class="articles-five__box">
+              <span class="articles-five__note">Популярное</span>
+              <div class="articles-five__topic">
+                <span class="articles__article articles__article--violet">Web design</span>
+                <h2 class="articles-five__title">Где взять реальные проекты для портфолио</h2>
+              </div>
+              <div class="articles-five__author">
+                <img src="img/articles-avatar.png" alt="Инна Квашова" class="articles-five__avatar" />
+                <div class="articles-five__info">
+                  <span class="articles-five__name">Сара Женникова</span>
+                  <div class="articles__meta">
+                    <span class="articles-data articles-five__data">25 сентября</span>
+                    <span class="articles__comment articles-five__comment"
+                      ><img
+                        src="img/Comment-white.svg"
+                        alt="Icon: Комментарий"
+                        class="articles-five__comment-mr"
+                      />16</span
+                    >
+                    <span class="articles-like"
+                      ><img src="img/Heart.svg" alt="Icon: Heart" class="articles-five__like" />832</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="articles-six">
+            <div class="articles__mini-box">
+              <h2 class="articles-title">Заказчики — мудаки?</h2>
+              <p class="articles-text">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+              <span class="articles-data articles-data--mt">20 октября</span>
+            </div>
+          </div>
+          <div class="articles-seven">
+            <div class="articles__mini-box">
+              <h2 class="articles-title">Бесплатные методы...</h2>
+              <p class="articles-text">
+                Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
+              </p>
+              <span class="articles-data">13 октября</span>
+            </div>
+          </div>
+          <div class="articles-eight">
+            <div class="articles-eight__box">
+              <h2 class="articles-eight__title">Чек-лист сдачи верстки вашему заказчику</h2>
+              <span class="articles-eight__pdf-size">PDF, 125 Мб</span>
+              <div class="articles-eight__image">
+                <img src="img/File.svg" alt="Icon:file" />
+              </div>
+            </div>
+            <a href="file/file.txt" download="file.txt" target="_blank" class="articles-eight__download"
+              ><img src="img/Download.svg" alt="Icon: Скачать" class="articles-eight__download-icon" />Скачать</a
+            >
+          </div>
+          <div class="articles-nine">
+            <h2 class="articles-nine__title">Теги</h2>
+            <div class="articles-nine__tegs">
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Forest</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Hover tag</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Nature</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Recreation</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Tent</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Fresh air</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Summer</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Mountains</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Wood</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Map</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Sun</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Wild animals</a>
+              </div>
+              <div class="articles-nine__teg">
+                <a href="#" class="articles-nine__teg-item">Night</a>
+              </div>
+            </div>
+          </div>
+          <div class="articles-ten">
+            <div class="articles-ten__box">
+              <h2 class="articles-ten__title">Наши соцсети</h2>
+              <div class="articles-ten__social">
+                <a
+                  href="https://ru-ru.facebook.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="articles-ten__social-image"
+                  ><img src="img/facebook.svg" alt="Icon: facebook"
+                /></a>
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="articles-ten__social-image"
+                  ><img src="img/twitter.svg" alt="Icon: twitter"
+                /></a>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  class="articles-ten__social-image"
+                  ><img src="img/youtube.svg" alt="Icon: youtube"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="parallax" data-parallax="scroll" data-image-src="./img/parallax-bg.jpg">
       <div class="parallax-wrapper">
-        <h2 class="parallax-title">Расследование недели: сколько зарабатывает&nbsp;веб&nbsp;разработчик в Москве</h2>
+        <h2 class="parallax-title">
+          Расследование недели: сколько зарабатывает&nbsp;веб&nbsp;разработчик в&nbsp;Москве
+        </h2>
         <a class="button parallax__button"
           >Читать статью <img src="img/Arrow.svg" alt="Icon: arrow" class="parallax__arrow"
         /></a>
       </div>
     </section>
+    <!-- parallax -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
