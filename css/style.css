@@ -3,9 +3,9 @@
 }
 
 @font-face {
-  font-family: "lato_light";
-  src: url("../fonts/lato_light.woff") format("woff");
-  src: url("../fonts/lato_light.woff2") format("woff2");
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.woff") format("woff");
+  src: url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "lato_light", sans-serif;
+  font-family: "Lato-Regular", sans-serif;
   background-color: #E5E5E5;
   color: #4B5157;
 }
@@ -50,19 +50,19 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-  color: #939699;
+  color: #D9DADB;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #939699;
+  color: #D9DADB;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #939699;
+  color: #D9DADB;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #939699;
+  color: #D9DADB;
   opacity: 1;
 }
 
@@ -1338,6 +1338,184 @@ template {
   margin-right: 0;
 }
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  background-color: #fff;
+}
+
+.footer__newsletter {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footer__newsletter-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.footer__input {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  border: 1px solid #D9DADB;
+  border-radius: 5px;
+  padding: 10px 264px 10px 15px;
+}
+
+.footer__button {
+  padding: 10px 25px;
+  background-color: #4592FF;
+  color: #fff;
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.footer__logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.footer__box {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.footer__list {
+  width: 195px;
+  justify-content: flex-start;
+}
+
+.footer__news {
+  border-top: 5px solid #FF4F52;
+}
+
+.footer__articles {
+  border-top: 5px solid #AC8EE3;
+}
+
+.footer__lessons {
+  border-top: 5px solid #4592FF;
+}
+
+.footer__courses {
+  border-top: 5px solid #FFA34D;
+}
+
+.footer__information {
+  border-top: 5px solid #3DC47E;
+}
+
+.footer__categorias {
+  border-top: 5px solid #6E99AE;
+}
+
+.footer__title {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.footer__ul {
+  padding: 0;
+  list-style-type: none;
+  color: #4B5157;
+}
+
+.footer__item {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  color: #4B5157;
+}
+
+.footer__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px solid #D9DADB;
+  border-top: 1px solid #D9DADB;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-block {
+  display: flex;
+  position: relative;
+  color: #262D33;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-block__item {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+.footer-block__item:first-child {
+  margin-left: 0px;
+}
+
+.footer-block__item:last-child {
+  margin-right: 0px;
+}
+
+.footer-block__link {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #262D33;
+  text-transform: uppercase;
+}
+
+.footer__social-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #939699;
+  max-width: 750px;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 20px;
+  color: #939699;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1379,6 +1557,10 @@ template {
   opacity: 1;
 }
 
+.modal__form {
+  position: relative;
+}
+
 .modal__close {
   position: absolute;
   right: 18px;
@@ -1399,7 +1581,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -1413,7 +1595,7 @@ template {
 
 .modal__message {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -1460,6 +1642,13 @@ template {
   color: #FF4F52;
   border-bottom: 1px solid #FF4F52;
   font-size: 12px;
+}
+
+label.invalid {
+  position: absolute;
+  left: 0;
+  margin-top: 82px;
+  margin-left: 5px;
 }
 
 .send__info {

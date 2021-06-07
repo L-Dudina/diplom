@@ -32,6 +32,8 @@
     &--visible
       visibility: visible
       opacity: 1
+  &__form
+    position: relative
   &__close
     position: absolute
     right: 18px
@@ -48,7 +50,7 @@
     margin-bottom: 11px
   &__input
     width: 100%
-    margin-top: 15px
+    margin-top: 30px
     font-weight: 400
     font-size: 12px
     line-height: 15px
@@ -60,7 +62,7 @@
     outline: none
   &__message
     width: 100%
-    margin-top: 15px
+    margin-top: 30px
     font-weight: 400
     font-size: 12px
     line-height: 15px
@@ -95,7 +97,14 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+
 .invalid
   color: $red
   border-bottom: 1px solid $red
   font-size: 12px
+
+label.invalid
+  position: absolute
+  left: 0
+  margin-top: 82px
+  margin-left: 5px

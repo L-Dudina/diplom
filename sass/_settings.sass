@@ -1,9 +1,12 @@
 *
   box-sizing: border-box
 @font-face
-  font-family: "lato_light"
-  src: url('../fonts/lato_light.woff') format("woff")
-  src: url('../fonts/lato_light.woff2') format("woff2")
+  // font-family: "lato_light"
+  // src: url('../fonts/lato_light.woff') format("woff")
+  // src: url('../fonts/lato_light.woff2') format("woff2")
+  font-family: "Lato-Regular"
+  src: url('../fonts/Lato-Regular.woff') format("woff")
+  src: url('../fonts/Lato-Regular.woff2') format("woff2")
   font-weight: normal
   font-style: normal
   font-display: swap
@@ -17,7 +20,7 @@
   font-display: swap
 
 body
-  font-family: "lato_light", sans-serif
+  font-family: "Lato-Regular", sans-serif
   // font-family: "Lato-Black", sans-serif
 
   background-color: $secondary
@@ -39,11 +42,11 @@ input, textarea
   color: $text-color
 
   &::placeholder
-    color: #939699
+    color: $line
   &:-ms-input-placeholder
-    color: #939699
+    color: $line
   &::-webkit-input-placeholder
-    color: #939699
+    color: $line
   &::-moz-placeholder
-    color: #939699
+    color: $line
     opacity: 1
