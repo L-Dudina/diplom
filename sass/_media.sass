@@ -183,6 +183,11 @@
     &-title
       font-size: 33px
       line-height: 45px
+  .modal
+    &__dialog
+      &--visible
+        padding-left: 35px
+        padding-right: 35px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -316,6 +321,18 @@
       font-size: 12px
       line-height: 16px
       padding: 9px 15px
+  .modal
+    &__dialog
+      &--visible
+        padding-left: 25px
+        padding-right: 25px
+    &__block
+      display: grid
+      grid-row-gap: 15px
+    &__button
+      grid-row: 2
+    &__info
+      grid-row: 1
 @media ( max-width: 626px)
   .aside
     &__news
@@ -356,6 +373,10 @@
     &-title
       font-size: 20px
       line-height: 30px
+  .modal
+    &__dialog
+      &--visible
+        min-width: 360px
 @media ( max-width: 536px)
   .articles
     &__title-one
@@ -431,6 +452,12 @@
     &-data
       &--mt
         margin-top: 10px
+  .modal
+    &__dialog
+      &--visible
+        min-width: 280px
+  .invalid
+    font-size: 11px
 @media (max-width: 464px)
   .articles
     &__title-one
@@ -534,3 +561,21 @@
           &>img:hover
             transform: scale(1.1)
             opacity: 0.8
+  .modal
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+  .send
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)

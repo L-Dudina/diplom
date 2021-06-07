@@ -50,6 +50,9 @@
               <a href="#" data-toggle="modal" class="button navbar__button navbar__button--mobile--visible">
                 ОСТАВИТЬ ЗАЯВКУ
               </a>
+              <!-- <button data-toggle="modal" class="button navbar__button navbar__button--mobile--visible" type="submit">
+                ОСТАВИТЬ ЗАЯВКУ
+              </button> -->
             </div>
             <!-- /.navbar__button  -->
             <button class="menu-button navbar-box__menu-button">
@@ -478,6 +481,34 @@
       </div>
     </section>
     <!-- parallax -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: close" /></a>
+        <h3 class="modal__title">Оставить заявку</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" minlength="2" class="input modal__input" placeholder="Ваше имя*" name="name" required />
+          <input
+            type="tel"
+            minlength="18"
+            class="input modal__input phone"
+            placeholder="Ваш номер телефона*"
+            name="phone"
+            required
+          />
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required />
+          <textarea class="message modal__message" placeholder="Сообщение" name="message"></textarea>
+          <div class="modal__block">
+            <button class="button modal__button" type="submit">Отправить</button>
+            <span class="modal__info">* Обязательное поле</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
