@@ -17,6 +17,48 @@
     &__image
       width: 50px
       height: 50px
+  .articles
+    &__grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(6, 170px)
+    &-two
+      grid-area: 1 / 3 / 3 / 4
+      &__image
+        width: 300px
+    &-three
+      grid-area: 5 / 1 / 6 / 2
+    &-data
+      &--margin
+        margin-top: 30px
+    &-four
+      grid-area: 6 / 1 / 7 / 2
+    &-five
+      grid-area: 3 / 1 / 5 / 3
+      &__bg
+        width: 630px
+      &__image
+        width: 630px
+      &__title
+        font-size: 22px
+        line-height: 33px
+      &__topic
+        margin-top: 110px
+      &__author
+        margin-top: 40px
+    &-six
+      grid-area: 5 / 2 / 6 / 3
+    &-seven
+      grid-area: 6 / 2 / 7 / 3
+    &-eight
+      grid-area: 5 / 3 / 6 / 4
+    &-nine
+      grid-area: 3 / 3 / 5 / 4
+      &__tegs
+        padding: 16px 20px 25px 21px
+    &-ten
+      grid-area: 6 / 3 / 7 / 4
+      &__social
+        text-align: center
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -97,7 +139,46 @@
     &__block
       border-right: none
       margin-left: 0
-
+  .articles
+    &__grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(8, 170px)
+    &-two
+      grid-area: 3 / 2 / 5/ 3
+      &__image
+        width: 335px
+    &-three
+      grid-area: 5 / 1 / 6 / 2
+    &-data
+      &--margin
+        margin-top: 30px
+    &-four
+      grid-area: 6 / 1 / 7 / 2
+    &-five
+      grid-area: 3 / 1 / 5 / 2
+      &__bg
+        width: 335px
+      &__image
+        width: 335px
+      &__title
+        font-size: 16px
+        line-height: 25px
+      &__topic
+        margin-top: 117px
+      &__author
+        margin-top: 50px
+    &-six
+      grid-area: 5 / 2 / 6 / 3
+    &-seven
+      grid-area: 6 / 2 / 7 / 3
+    &-eight
+      grid-area: 7 / 2 / 8 / 3
+    &-nine
+      grid-area: 7 / 1 / 9 / 2
+      &__tegs
+        padding: 16px 13px 25px 21px
+    &-ten
+      grid-area: 8 / 2 / 9 / 3
   .parallax
     &-title
       font-size: 33px
@@ -181,6 +262,52 @@
       max-width: 130px
     &__image
       margin-right: 5px
+  .articles
+    &-two
+      grid-area: 5 / 1 / 7/ 3
+      &__image
+        width: 576px
+      &__holder
+        padding-bottom: 15px
+      &__title
+        width: 235px
+        font-size: 22px
+        line-height: 31px
+    &-three
+      grid-area: 7 / 1 / 8 / 3
+    &-data
+      &--margin
+        margin-top: 30px
+    &-four
+      grid-area: 8 / 1 / 9 / 3
+    &__mini-box
+      padding: 25px 25px 49px 25px
+    &-five
+      grid-area: 3 / 1 / 5 / 3
+      &__bg
+        max-width: 100%
+        width: 576px
+      &__image
+        width: 576px
+      &__title
+        font-size: 22px
+        line-height: 31px
+      &__topic
+        margin-top: 110px
+      &__author
+        margin-top: 45px
+    &-six
+      grid-area: 9 / 1 / 10 / 3
+    &-seven
+      grid-area: 10 / 1 / 11 / 3
+    &-eight
+      grid-area: 12 / 1 / 13 / 3
+      &__image
+        top: 10px
+    &-nine
+      grid-area: 11 / 1 / 12 / 3
+    &-ten
+      grid-area: 13 / 1 / 14 / 3
   .parallax
     &-title
       font-size: 25px
@@ -205,12 +332,43 @@
     &__image
       width: 60px
       height: 60px
+@media ( max-width: 605px)
+  .articles
+    &__image-one
+      width: 232px
+      height: 283px
+    &__info-one
+      display: flex
+      flex-direction: column
+    &__author
+      align-items: flex-end
+    &__avatar
+      width: 45px
+      height: 45px
+@media ( max-width: 583px)
+  .articles
+    &-data
+      &--margin
+        margin-top: 10px
 @media ( max-width: 576px)
   .parallax
     height: 245px
     &-title
       font-size: 20px
       line-height: 30px
+@media ( max-width: 536px)
+  .articles
+    &__title-one
+      margin-bottom: 30px
+    &__image-one
+      display: none
+    &__box
+      &-one
+        padding: 0 35px
+    &__text-one
+      margin-bottom: 70px
+    &__author
+      padding: 0 35px
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -220,15 +378,95 @@
     &-title
       font-size: 18px
       line-height: 30px
-
-// @media (max-width: 455px)
-
-// @media (max-width: 400px)
-
+  .articles
+    &__grid
+      grid-template-columns: repeat(1, 1fr)
+    &-one
+      grid-area: 1 / 1 / 3 / 2
+    &__topic
+      -webkit-line-clamp: 2
+      width: 100%
+    &-two
+      grid-area: 5 / 1 / 7/ 2
+      // &__image
+      //   width: 576px
+      // &__holder
+      //   padding-bottom: 15px
+      // &__title
+      //   width: 235px
+      //   font-size: 22px
+      //   line-height: 31px
+    &-three
+      grid-area: 7 / 1 / 8 / 2
+    &-four
+      grid-area: 8 / 1 / 9 / 2
+    &-five
+      grid-area: 3 / 1 / 5 / 2
+      // &__bg
+      //   max-width: 100%
+      //   width: 576px
+      // &__image
+      //   width: 576px
+      &__title
+        font-size: 19px
+        line-height: 28px
+      // &__topic
+      //   margin-top: 110px
+      &__author
+        margin-top: 60px
+    &-six
+      grid-area: 9 / 1 / 10 / 2
+    &-seven
+      grid-area: 10 / 1 / 11 / 2
+    &-eight
+      grid-area: 13 / 1 / 14 / 2
+      &__image
+        top: 10px
+      &__box
+        padding-right: 33px
+    &-nine
+      grid-area: 11 / 1 / 13 / 2
+    &-ten
+      grid-area: 14 / 1 / 15 / 2
+    &-data
+      &--mt
+        margin-top: 10px
+@media (max-width: 464px)
+  .articles
+    &__title-one
+      font-size: 20px
+      line-height: 25px
+    &__text-one
+      margin-bottom: 80px
+    &__author
+      align-items: flex-start
+      padding-right: 15px
+      padding-left: 20px
+    &__topic
+      font-size: 13px
+    &__comment
+      top: 2px
+      right: 35px
+      &-image
+        top: 2px
+        right: 60px
+@media (max-width: 401px)
+  .articles
+    &__text-one
+      margin-bottom: 50px
+@media ( max-width: 385px)
+  .articles
+    &__text-one
+      margin-bottom: 35px
 @media ( max-width: 380px)
   .aside
     &__topic
       max-width: 160px
+  .articles
+    &-five
+      &__title
+        font-size: 16px
+        line-height: 25px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
@@ -280,6 +518,10 @@
         background-position: 0 0
         box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
   .articles
+    &-eight
+      &__download
+        &:hover
+          color: $line
     &-nine
       &__teg
         &-item
