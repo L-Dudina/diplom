@@ -9,48 +9,23 @@
     background-color: $light
     grid-area: 1 / 1 / 3 / 3
     border-radius: 10px
-  &__article
-    font-family: "Lato-Black", sans-serif
-    font-weight: 900
-    font-size: 12px
-    line-height: 15px
-    letter-spacing: 0.5px
-    text-transform: uppercase
-    &--gray
-      color: $gray
-    &--violet
-      color: #E7D9FF
   &-text
-    font-size: 14px
-    line-height: 20px
-    letter-spacing: 0.1px
     margin: 0
-    display: -webkit-box
     -webkit-line-clamp: 3
-    -moz-box-orient: vertical
-    -webkit-box-orient: vertical
-    overflow: hidden
-    text-overflow: ellipsis
-    &__one
-      -webkit-line-clamp: 4
+    &--short
+      -webkit-line-clamp: 3
   &__mini
     &-box
       padding: 25px 25px 30px 25px
       background-color: $light
       border-radius: 10px
   &-title
-    font-family: 'Roboto Slab', serif
-    font-weight: 700
-    font-size: 16px
-    line-height: 25px
     color: $dark
     margin-top: 0
     margin-bottom: 5px
+    -webkit-line-clamp: 1
   &-data
     display: block
-    font-size: 12px
-    line-height: 15px
-    color: $lightgray
     margin-top: 10px
     &--mt
       margin-top: 30px
@@ -72,12 +47,7 @@
       font-size: 25px
       line-height: 30px
       color: $dark
-      display: -webkit-box
       -webkit-line-clamp: 3
-      -moz-box-orient: vertical
-      -webkit-box-orient: vertical
-      overflow: hidden
-      text-overflow: ellipsis
       margin-bottom: 24px
   &__image
     &-one
@@ -86,7 +56,7 @@
       margin-top: 15px
       border-top-right-radius: 10px
   &__text-one
-    -webkit-line-clamp: 4
+    -webkit-line-clamp: 3
   &__line
     margin-top: 0
     border: none
@@ -109,23 +79,11 @@
     display: flex
   &__name
     width: 100px
-    font-family: "Lato-Black", sans-serif
-    font-weight: 900
-    font-size: 14px
-    line-height: 20px
     color: $dark
     margin-right: 5px
   &__topic
-    width: 284px
-    font-size: 14px
-    line-height: 20px
-    letter-spacing: 0.1px
-    display: -webkit-box
+    width: 285px
     -webkit-line-clamp: 1
-    -moz-box-orient: vertical
-    -webkit-box-orient: vertical
-    overflow: hidden
-    text-overflow: ellipsis
   &__comment
     position: absolute
     top: 8px
@@ -196,10 +154,6 @@
     &__topic
       margin-top: 117px
     &__title
-      font-family: 'Roboto Slab', serif
-      font-weight: 700
-      font-size: 16px
-      line-height: 25px
       letter-spacing: 0.5px
       text-transform: uppercase
       color: $light
@@ -226,8 +180,6 @@
       margin-top: 1px
       margin-bottom: 2px
     &__comment
-      font-size: 12px
-      line-height: 15px
       color: $light
       opacity: 0.4
       margin-left: 5px
@@ -255,10 +207,6 @@
       border-top-left-radius: 10px
       padding: 25px 25px 19px 25px
     &__title
-      font-family: 'Roboto Slab', serif
-      font-weight: 700
-      font-size: 16px
-      line-height: 25px
       color: $light
       margin-top: 0
       margin-bottom: 10px
@@ -291,10 +239,6 @@
     background-color: $light
     border-radius: 10px
     &__title
-      font-family: "Lato-Black", sans-serif
-      font-weight: 900
-      font-size: 14px
-      line-height: 20px
       color: $dark
       letter-spacing: 0.5px
       text-transform: uppercase
@@ -305,7 +249,7 @@
       padding: 16px 13px 25px 21px
     &__teg
       display: inline-block
-      margin: 12px 3px
+      margin: 13px 3px
       &-item
         font-family: "Lato-Black", sans-serif
         font-size: 14px
@@ -334,3 +278,8 @@
         margin-right: 15px
         &:last-child
           margin-right: 0
+.article
+  &--gray
+    color: $gray
+  &--violet
+    color: #E7D9FF

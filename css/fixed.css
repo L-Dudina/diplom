@@ -1,16 +1,4 @@
-.tabs__subtitle {
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-}
-.articles__title-one {
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-}
-.articles-text {
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-}
-.articles__topic {
+.fixed {
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
 }

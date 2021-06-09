@@ -59,6 +59,27 @@
       grid-area: 6 / 3 / 7 / 4
       &__social
         text-align: center
+  .hot
+    &-slider
+      width: 450px
+    &__slider
+      &-title
+        font-size: 36px
+    &__conteiner
+      &-two
+        width: 450px
+    &__box
+      &-two
+        width: 450px
+    &__articles
+      width: 210px
+      padding: 27px 20px
+    &__title
+      &-three
+        font-size: 15px
+    &__text
+      &-three
+        font-size: 13px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -143,6 +164,9 @@
     &__grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(8, 170px)
+    &-text
+      &--short
+        -webkit-line-clamp: 2
     &-two
       grid-area: 3 / 2 / 5/ 3
       &__image
@@ -183,11 +207,53 @@
     &-title
       font-size: 33px
       line-height: 45px
+  .hot
+    &-slider
+      width: 100%
+      margin-bottom: 30px
+    &__slider
+      &-holder
+        max-width: 700px
+      &-title
+        font-size: 36px
+    &__conteiner
+      &-two
+        width: 700px
+    &__box
+      flex-direction: column
+      &-two
+        width: 100%
+    &__articles
+      max-width: calc(100% - 10px)
+      width: 345px
+    &__title
+      &-three
+        font-size: 16px
+    &__text
+      &-three
+        font-size: 14px
+        -webkit-line-clamp: 2
+    &__hover
+      margin-right: 20px
   .modal
     &__dialog
       &--visible
         padding-left: 35px
         padding-right: 35px
+  .footer
+    &__box
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+      justify-content: center
+      max-width: 700px
+      width: 100%
+    &__navbar
+      flex-direction: column
+    &__info
+      flex-direction: column
+    &__text
+      margin-bottom: 30px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -268,6 +334,12 @@
     &__image
       margin-right: 5px
   .articles
+    &-text
+      -webkit-line-clamp: 2
+      &--short
+        -webkit-line-clamp: 1
+    &__text-one
+      -webkit-line-clamp: 4
     &-two
       grid-area: 5 / 1 / 7/ 3
       &__image
@@ -321,6 +393,19 @@
       font-size: 12px
       line-height: 16px
       padding: 9px 15px
+  .hot
+    &__articles
+      max-width: 273px
+    &__hover
+      margin-right: 30px
+  .footer
+    &__newsletter
+      &-title
+        font-size: 34px
+    &__box
+      grid-template-columns: repeat(2, 1fr)
+      max-width: 576px
+      width: 100%
   .modal
     &__dialog
       &--visible
@@ -349,6 +434,29 @@
     &__image
       width: 60px
       height: 60px
+  .hot
+    &__articles
+      max-width: 100%
+      width: 100%
+  .footer
+    &__input
+      width: 260px
+    &__nav
+      flex-direction: column
+    &__logo
+      margin-right: 0
+      margin-bottom: 25px
+    &-block
+      flex-direction: column
+      text-align: center
+      &__item
+        margin-right: 0
+        margin-left: 0
+        margin-bottom: 15px
+        &:last-child
+          margin-right: 0
+    &__social
+      margin-top: 15px
 @media ( max-width: 605px)
   .articles
     &__image-one
@@ -373,6 +481,30 @@
     &-title
       font-size: 20px
       line-height: 30px
+  .articles
+    &-text
+      &--clamp
+        -webkit-line-clamp: 2
+  .hot
+    &__maxi
+      &-box
+        flex-direction: column
+    &__hover
+      margin-right: 0
+      margin-bottom: 30px
+    &__slider
+      &-title
+        font-size: 28px
+  .footer
+    &__group
+      flex-direction: column
+    &__input
+      margin-bottom: 40px
+    &__button
+      margin-top: 45px
+      margin: 0 auto
+    &__box
+      margin-top: 115px
   .modal
     &__dialog
       &--visible
@@ -381,6 +513,9 @@
   .articles
     &__title-one
       margin-bottom: 30px
+      -webkit-line-clamp: 2
+    &__text-one
+      -webkit-line-clamp: 3
     &__image-one
       display: none
     &__box
@@ -390,6 +525,14 @@
       margin-bottom: 70px
     &__author
       padding: 0 35px
+@media (max-width: 503px)
+  .articles
+    &-text
+      &--short
+        -webkit-line-clamp: 2
+    &-data
+      &--mt
+        margin-top: 10px
 @media ( max-width: 480px)
   .container
     max-width: 88%
@@ -452,6 +595,18 @@
     &-data
       &--mt
         margin-top: 10px
+  // .footer
+  //   &__input
+  //     width: 281px
+  //     display: block
+  //     margin: 0 auto
+  //   &__button
+  //     position: relative
+  //     top: 20px
+  //   &__box
+  //     display: flex
+  //     flex-direction: column
+  //     text-align: center
   .modal
     &__dialog
       &--visible
@@ -480,20 +635,25 @@
 @media (max-width: 401px)
   .articles
     &__text-one
-      margin-bottom: 50px
-@media ( max-width: 385px)
-  .articles
-    &__text-one
-      margin-bottom: 35px
+      margin-bottom: 65px
 @media ( max-width: 380px)
   .aside
     &__topic
       max-width: 160px
   .articles
+    &__title-one
+      -webkit-line-clamp: 3
+    &__text-one
+      margin-bottom: 30px
+      -webkit-line-clamp: 4
     &-five
       &__title
         font-size: 16px
         line-height: 25px
+  .hot
+    &__slider
+      &-title
+        font-size: 24px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
@@ -561,6 +721,43 @@
           &>img:hover
             transform: scale(1.1)
             opacity: 0.8
+  .hot
+    &__slider-button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+    &__button-two
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+    &__articles
+      &:hover
+        background: $line
+  .footer
+    &__button
+      background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)
+      background-position: 100% 0
+      background-size: 200% 100%
+      transition: all .25s ease-in
+      &:hover
+        background-position: 0 0
+        box-shadow: 0 4px 15px 0 rgba(19,40,145, 0.75)
+    &-block__link, &__link
+      &:hover
+        color: $blue
+    &__social
+      &-image
+        &:hover
+          transform: scale(0.9)
+          opacity: 0.7
   .modal
     &__button
       background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)

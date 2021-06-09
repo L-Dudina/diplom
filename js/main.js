@@ -88,20 +88,32 @@ $(document).ready(function () {
   ///////////////
 
   // Обработка форм
+  $(".footer__form").each(function() {
+    $(this).validate({
+      errorClass: "failed",
+      messages: {
+        email: {
+          required: "Вы не указали Ваш email",
+          email: "Формат email-адреса name@domain.com"
+        },
+      }
+    })
+  });
+
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Ваше имя",
+          required: "Вы не указали Ваше имя",
           minlength: "Имя не должно быть меньше 2 букв"
         },
         email: {
-          required: "Ваш email",
+          required: "Вы не указали Ваш email",
           email: "Формат email-адреса name@domain.com"
         },
         phone: {
-          required: "Номер Вашего телефона",
+          required: "Вы не указали номер Вашего телефона",
           minlength: "Номер должен состоять из 11 цифр"
         }
       }
@@ -110,6 +122,31 @@ $(document).ready(function () {
 
   $(document).ready(function() {
     $(".phone").mask("+7 (999) 999-99-99");
+  });
+
+  var hotelSwiper = new Swiper('.hot-slider', {
+    // Optional parameters
+    loop: false,
+    
+    autoplay: {
+      delay: 1000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      // Буллеты
+      type: 'bullets',
+      clickable: true,
+    },
+
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.hotel-slider__button--next',
+    //   prevEl: '.hotel-slider__button--prev',
+    // },
+    speed: 600
   });
 
   AOS.init();

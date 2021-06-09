@@ -1,0 +1,199 @@
+.hot
+  padding-top: 60px
+  padding-bottom: 59px
+  background-color: $dark
+  &__box
+    display: flex
+    justify-content: space-between
+  &__slider
+    margin-right: 30px
+  &-slider
+    width: 555px
+    height: 570px
+    position: relative
+    border-radius: 10px
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background: rgba(64, 48, 61, 0.35)
+      z-index: 10
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__slider
+    &-block
+      position: relative
+    &-holder
+      position: absolute
+      top: 0px
+      z-index: 20
+      max-width: 555px
+      padding-top: 20px
+    &-note
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      padding: 6px 12px
+      background-color: $green
+      border-radius: 3px
+      margin-left: 19px
+    &-author
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 11px
+    &-avatar
+      width: 45px
+      height: 45px
+      object-fit: cover
+      border-radius: 50%
+      margin-bottom: 8px
+    &-name
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+      margin-bottom: 2px
+    &-vocation
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      opacity: 0.4
+    &-topic
+      display: contents
+    &-title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 40px
+      line-height: 50px
+      color: $light
+      text-align: center
+      margin-top: 31px
+    &-button
+      display: flex
+      align-items: center
+      width: 194px
+      padding: 10px 20px
+      border-radius: 20px
+      background-color: $primary
+      margin-top: 13px
+    &-text
+      font-family: "Lato-Black", sans-serif
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      margin-left: 8px
+    &-number
+      font-size: 14px
+      line-height: 20px
+      color: #C5E4FC
+      margin-left: 8px
+  &__box-two
+    width: 555px
+    height: 370px
+    position: relative
+    border-radius: 10px
+    margin-bottom: 30px
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: #B4D1E0
+      border-radius: 10px
+      z-index: 0
+  &__image-two
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10px
+  &__content
+    max-width: 243px
+    position: absolute
+    top: 0px
+    padding-top: 33px
+    padding-left: 35px
+    z-index: 2
+  &__title-two
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
+    font-size: 25px
+    line-height: 30px
+    color: $dark
+    -webkit-line-clamp: 3
+    margin-bottom: 16px
+    margin-top: 19px
+  &__text-two
+    font-size: 14px
+    line-height: 20px
+    margin: 0
+    -webkit-line-clamp: 3
+    margin-bottom: 54px
+  &__button-two
+    font-family: "Lato-Black", sans-serif
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    text-decoration: none
+    color: $light
+    padding: 13px 20px
+    background-color: $blue
+    border-radius: 20px
+    margin-left: 3px
+  &__arrow
+    margin-left: 5px
+  &__maxi
+    &-box
+      display: flex
+  &__hover
+    color: $text-color
+    margin-right: 29px
+    &:last-child
+      margin-right: 0
+  &__articles
+    max-width: 263px
+    background-color: $light
+    border-radius: 10px
+    padding: 25px 25px 30px
+  &__title-three
+    color: $dark
+    margin-top: 0px
+    margin-bottom: 5px
+    -webkit-line-clamp: 1
+  &__text-three
+    font-size: 14px
+    line-height: 20px
+    margin-top: 0
+    margin-bottom: 10px
+    -webkit-line-clamp: 3
+  &__data
+    display: block
+    margin-top: 10px
+
+.swiper-pagination
+  display: inline-block
+  position: relative
+  padding: 0
+  margin: 0
+  bottom: 60px !important
+  z-index: 11
+
+  &-bullet
+    height: 8px
+    width: 8px
+    border-radius: 5px
+    background-color: $light
+    margin: 0 9px !important

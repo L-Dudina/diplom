@@ -27,6 +27,7 @@ body
   color: $text-color
 .container
   max-width: 1140px
+  overflow: hidden
   margin: auto
 img
   max-width: 100%
@@ -40,6 +41,7 @@ button
 
 input, textarea
   color: $text-color
+  outline: none
 
   &::placeholder
     color: $line
@@ -50,3 +52,46 @@ input, textarea
   &::-moz-placeholder
     color: $line
     opacity: 1
+.fixed
+  display: -webkit-box
+  -moz-box-orient: vertical
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-overflow: ellipsis
+.article
+  font-family: "Lato-Black", sans-serif
+  font-weight: 900
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+  &--bluegreen
+    color: $bluegreen
+  &--gray
+    color: $gray
+  &--purple
+    color: $purple
+  &--orange
+    color: $orange
+  &--green
+    color: $green
+  &--red
+    color: $red
+.text
+  font-size: 14px
+  line-height: 20px
+.subtitle
+  font-family: "Lato-Black", sans-serif
+  font-weight: 900
+  font-size: 14px
+  line-height: 20px
+.title
+  font-family: 'Roboto Slab', serif
+  font-weight: 700
+  font-size: 16px
+  line-height: 25px
+  color: $dark
+.data, .number
+  font-size: 12px
+  line-height: 15px
+  color: $lightgray

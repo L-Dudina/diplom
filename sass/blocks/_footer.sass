@@ -1,7 +1,13 @@
 .footer
-  padding-top: 60px
+  padding-top: 28px
   padding-bottom: 55px
   background-color: $light
+  &__form
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+  &__group
+    display: flex
   &__newsletter
     text-align: center
     margin-bottom: 70px
@@ -12,13 +18,16 @@
       line-height: 50px
       margin-bottom: 25px
   &__input
+    width: 313px
+    min-height: 40px
     font-size: 14px
     line-height: 20px
     color: $text-color
     border: 1px solid $line
     border-radius: 5px
-    padding: 10px 264px 10px 15px
+    padding-left: 12px
   &__button
+    max-width: 134px
     padding: 10px 25px
     background-color: $blue
     color: $light
@@ -26,8 +35,9 @@
     font-weight: 900
     font-size: 14px
     line-height: 20px
-    margin-left: 10px
+    margin-left: 9px
     border-radius: 20px
+    border: none
   &__logo
     width: 50px
     height: 50px
@@ -35,9 +45,13 @@
     margin-right: 30px
   &__box
     display: flex
-    margin-bottom: 64px
+    margin-top: 65px
+    margin-bottom: 31px
+    padding-bottom: 48px
+    width: calc(100% + 28px)
+    border-bottom: 1px solid $line
   &__list
-    width: 195px
+    width: 100%
     justify-content: flex-start
   &__news
     border-top: 5px solid $red
@@ -52,20 +66,13 @@
   &__categorias
     border-top: 5px solid $gray
   &__title
-    font-family: "Lato-Black", sans-serif
-    font-weight: 900
-    font-size: 14px
-    line-height: 20px
-    color: $dark
-    margin-top: 35px
+    margin-top: 30px
     margin-bottom: 25px
   &__ul
     padding: 0
     list-style-type: none
     color: $text-color
   &__item
-    font-size: 14px
-    line-height: 20px
     margin-bottom: 15px
   &__link
     color: $text-color
@@ -73,9 +80,9 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 30px 0
+    margin-top: 30px
+    padding-bottom: 28px
     border-bottom: 1px solid $line
-    border-top: 1px solid $line
   &__nav
     display: flex
     align-items: center
@@ -87,35 +94,35 @@
     margin: 0
     &__item
       list-style-type: none
-      margin: 0 15px
+      margin: 0 14px
       &:first-child
         margin-left: 0px
       &:last-child
         margin-right: 0px
+        margin-left: 17px
     &__link
-      font-family: "Lato-Black", sans-serif
-      font-weight: 900
-      font-size: 14px
-      line-height: 20px
-      letter-spacing: 0.5px
       color: $dark
+      letter-spacing: 0.5px
       text-transform: uppercase
   &__social
     &-image
       width: 40px
       height: 40px
       object-fit: cover
-      margin-right: 15px
+      margin-left: 11px
   &__info
     display: flex
     justify-content: space-between
     margin-top: 40px
   &__text
-    font-size: 14px
-    line-height: 20px
     color: $lightgray
     max-width: 750px
   &__copyright
-    font-size: 14px
-    line-height: 20px
     color: $lightgray
+.failed
+  color: $red
+  border-bottom: 1px solid $red
+  font-size: 12px
+label.failed
+  position: absolute
+  margin-top: 42px
