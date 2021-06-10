@@ -11,6 +11,12 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("navbar-menu--visible");
   }); 
 
+  var bookmarks = $(".news__bookmark");
+  bookmarks.on("click", function(event){
+    if(event) event.preventDefault();
+    $(this).toggleClass("news__bookmark--active");
+  })
+
 // Табы
   var tabsItem = $(".tabs__item");
   var contentItem = $(".content__item");
@@ -48,44 +54,6 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-
-  //////////////////////
-
-  // function sendModal() {
-  //   if($(".form").valid()){
-  //     closeModal();
-  //     setTimeout(() => {        
-  //       spaceSendModal();
-  //     }, 500);
-  //   }
-  // }
-
-  // function spaceSendModal(){
-  //   openSendModal();
-    
-  //   function openSendModal() {
-  //     var modalSendOverlay = $(".modal__overlay");
-  //     var modalSendDialog = $(".modal__dialog--send");
-  //     modalSendOverlay.addClass("modal__overlay--visible");
-  //     modalSendDialog.addClass("modal__dialog--visible");
-
-  //     var closeSendModalButton = $(".modal__close, .modal__overlay");
-  //     closeSendModalButton.on("click", closeSendModal);
-  //   }
-
-  //   function closeSendModal(event) {
-  //     if(event) {
-  //       event.preventDefault();
-  //     }
-
-  //     var modalOverlay = $(".modal__overlay");
-  //     var modalDialog = $(".modal__dialog--send");
-  //     modalOverlay.removeClass("modal__overlay--visible");
-  //     modalDialog.removeClass("modal__dialog--visible");
-  //   }
-  // }
-
-  ///////////////
 
   // Обработка форм
   $(".footer__form").each(function() {

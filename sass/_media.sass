@@ -80,6 +80,12 @@
     &__text
       &-three
         font-size: 13px
+  .news
+    &__block
+      max-width: 670px
+    &__sidebar
+      &-subtitle
+        font-size: 12px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -240,6 +246,18 @@
       &--visible
         padding-left: 35px
         padding-right: 35px
+  .news
+    &__block
+      max-width: 440px
+      padding: 0 18px
+    &__image
+      width: 160px
+    &__sidebar
+      width: 237px
+      &-subtitle
+        padding: 0 15px
+      &-box
+        margin: 0 15px
   .footer
     &__box
       display: grid
@@ -345,7 +363,7 @@
       &__image
         width: 576px
       &__holder
-        padding-bottom: 15px
+        padding-bottom: 0
       &__title
         width: 235px
         font-size: 22px
@@ -398,6 +416,19 @@
       max-width: 273px
     &__hover
       margin-right: 30px
+  .news
+    &__sidebar
+      display: none
+    &__container
+      width: 100%
+    &__block
+      width: 100%
+      max-width: 100%
+      margin-right: 0
+    &__image
+      width: 275px
+    &__info
+      width: 39%
   .footer
     &__newsletter
       &-title
@@ -495,6 +526,15 @@
     &__slider
       &-title
         font-size: 28px
+  .news
+    &__box
+      flex-direction: column
+      padding: 30px 0 28px
+    &__image
+      width: 100%
+      margin-bottom: 20px
+    &__info
+      width: 100%
   .footer
     &__group
       flex-direction: column
@@ -577,7 +617,7 @@
       // &__topic
       //   margin-top: 110px
       &__author
-        margin-top: 60px
+        margin-top: 45px
     &-six
       grid-area: 9 / 1 / 10 / 2
     &-seven
@@ -595,7 +635,10 @@
     &-data
       &--mt
         margin-top: 10px
-  // .footer
+  .footer
+    &__newsletter-title
+      font-size: 28px
+      line-height: 40px
   //   &__input
   //     width: 281px
   //     display: block
@@ -654,6 +697,9 @@
     &__slider
       &-title
         font-size: 24px
+  .news
+    &__title
+      font-size: 18px
 @media (hover: hover) and (pointer: fine)
   .navbar
     &-menu
@@ -741,6 +787,16 @@
     &__articles
       &:hover
         background: $line
+  .articles
+    &-hover
+      &:hover
+        transform: scale(0.98)
+  .news
+    &__box
+      &:hover
+        &>img
+          opacity: 0.6
+
   .footer
     &__button
       background-image: linear-gradient(to left, transparent, transparent 50%, #132891 50%, #094b79, #00d4ff)

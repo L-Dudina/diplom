@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Universal</title>
-  </head>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -15,7 +14,8 @@
     <link rel="stylesheet" href="css/fixed.css" />
   </head>
   <body>
- <header class="navbar navbar--mobile--fixed">
+    <div class="bgdoor"></div>
+    <header class="navbar navbar--mobile--fixed">
       <div class="navbar-button">
         <div class="container">
           <div class="navbar-box">
@@ -25,13 +25,13 @@
             <div class="navbar-menu">
               <ul class="navbar-menu__block navbar-menu__block--mobile--visible">
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#articles" class="navbar-menu__link">Статьи</a>
+                  <a href="#articles" class="navbar-menu__link">Статьи</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#news" class="navbar-menu__link">Новости</a>
+                  <a href="#news" class="navbar-menu__link">Новости</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#hot" class="navbar-menu__link">Горячее</a>
+                  <a href="#hot" class="navbar-menu__link">Горячее</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
                   <a href="#footer" class="navbar-menu__link">HTML</a>
@@ -66,20 +66,8 @@
         <!-- /.container -->
       </div>
     </header>
-    <section class="send">
-      <div class="container">
-            <div class="send-wrapper">
-              <h1 class="send__info">Заявка отправлена</h1>
-              <p class="send__description">Наш менеджер свяжется с Вами в ближайшее время</p>
-             <a href="index.html" class="button send__button"
-              >На главную <img src="img/Arrow.svg" alt="Icon: arrow" class="send__arrow"
-            /></a>
-            </div>
-          </div>
-      </div>
-      <!-- /.container -->
-    </section>
-     <footer id="footer" class="footer">
+    <!-- /.header -->
+    <footer id="footer" class="footer">
       <div class="footer__newsletter">
         <h2 class="footer__newsletter-title">Подпишитесь на нашу рассылку</h2>
         <form action="send.php" method="POST" class="footer__form">
@@ -163,7 +151,7 @@
                 <a href="#" class="footer-block__link subtitle">Реклама</a>
               </li>
               <li class="footer-block__item">
-                <a href="#" data-toggle="modal" class="footer-block__link subtitle">Обратная связь</a>
+                <a href="#footer" data-toggle="modal" class="footer-block__link subtitle">Обратная связь</a>
               </li>
             </ul>
           </div>
