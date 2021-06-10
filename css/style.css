@@ -140,13 +140,14 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 .to-top {
   position: fixed;
-  bottom: 63px;
-  right: 70px;
+  bottom: 105px;
+  right: 40px;
   box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
   border: 1px solid #4592FF;
   background-color: #fff;
   padding: 13px 18px;
   border-radius: 10px;
+  z-index: 99;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2464,6 +2465,9 @@ label.invalid {
   .footer__text {
     margin-bottom: 30px;
   }
+  .to-top {
+    bottom: 75px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2663,6 +2667,9 @@ label.invalid {
     grid-template-columns: repeat(2, 1fr);
     max-width: 576px;
     width: 100%;
+  }
+  .to-top {
+    bottom: 60px;
   }
   .modal__dialog--visible {
     padding-left: 25px;
@@ -2902,6 +2909,9 @@ label.invalid {
   .footer__newsletter-title {
     font-size: 28px;
     line-height: 40px;
+  }
+  .to-top {
+    bottom: 55px;
   }
   .modal__dialog--visible {
     min-width: 280px;
