@@ -44,6 +44,7 @@ a {
 button {
   cursor: pointer;
   outline: none;
+  border: none;
 }
 
 input, textarea {
@@ -148,6 +149,21 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   padding: 13px 18px;
   border-radius: 10px;
   z-index: 99;
+}
+
+.failed {
+  color: #FF4F52;
+  border-bottom: 1px solid #FF4F52;
+  font-size: 12px;
+}
+
+label.failed {
+  position: absolute;
+  margin-top: 42px;
+}
+
+label.failed__message {
+  margin-top: 130px !important;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1753,6 +1769,229 @@ template {
   margin-bottom: 0px;
 }
 
+.comments {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.comments__container {
+  max-width: 750px;
+  margin-left: 210px;
+}
+
+.comments__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments__title {
+  display: flex;
+  align-items: baseline;
+}
+
+.comments__subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #262D33;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.comments__number {
+  font-size: 40px;
+  line-height: 50px;
+  color: #939699;
+}
+
+.comments__button {
+  width: 228px;
+  color: #262D33;
+  padding: 6px 20px;
+  border: 1px solid #D9DADB;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.comments__button--hidden {
+  display: none !important;
+}
+
+.comments__icon {
+  position: relative;
+  top: 2px;
+  margin-right: 7px;
+}
+
+.comments__item {
+  display: none;
+  padding-top: 17px;
+  border-top: 1px solid #D9DADB;
+}
+
+.comments__item--visible {
+  display: flex !important;
+}
+
+.comments__avatar {
+  display: contents;
+}
+
+.comments__avatar-img {
+  width: 75px;
+  height: 77px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comments__avatar-img--position {
+  margin-right: 21px;
+  margin-bottom: 48px;
+}
+
+.comments__message {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 9px;
+}
+
+.comments__content {
+  max-width: 570px;
+}
+
+.comments__name {
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+
+.comments__meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.comments__answer {
+  color: #262D33;
+  margin-right: 15px;
+}
+
+.comments__image {
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.comments__like--green {
+  color: #3DC47E;
+}
+
+.comments__like--red {
+  color: #FF4F52;
+}
+
+.comments__like-image {
+  transform: rotate(180deg);
+  position: relative;
+  top: 3px;
+  margin-right: 11px;
+}
+
+.comments__replies {
+  padding-left: 90px;
+}
+
+.comments__button-load {
+  width: 100%;
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9DADB;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  color: #262D33;
+}
+
+.comments__loading {
+  margin-right: 5px;
+  margin-left: 25px;
+}
+
+.comments__content-two {
+  display: flex;
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 10px;
+  padding: 7px 39px 37px 30px;
+}
+
+.comments__content-info {
+  position: relative;
+}
+
+.comments__content-info::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: white;
+  top: 94px;
+  left: -6px;
+  transform: rotate(45deg);
+  border-left: 1px solid #D9DADB;
+  border-bottom: 1px solid #D9DADB;
+}
+
+.comments__content-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  color: #262D33;
+  margin-top: 23px;
+}
+
+.comments__content-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  margin-left: 3px;
+}
+
+.comments__content-arrow {
+  margin-left: 5px;
+}
+
+.comments__textarea {
+  width: 585px;
+  background-color: #fff;
+  border-radius: 6px;
+  min-height: 130px;
+  border: 1px solid #D9DADB;
+  overflow-y: auto;
+  resize: none;
+  outline: none;
+  margin-bottom: 11px;
+  padding: 10px;
+}
+
+.dislike {
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+
 .footer {
   padding-top: 28px;
   padding-bottom: 55px;
@@ -1933,17 +2172,6 @@ template {
 
 .footer__copyright {
   color: #939699;
-}
-
-.failed {
-  color: #FF4F52;
-  border-bottom: 1px solid #FF4F52;
-  font-size: 12px;
-}
-
-label.failed {
-  position: absolute;
-  margin-top: 42px;
 }
 
 .modal__overlay {

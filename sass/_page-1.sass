@@ -1,0 +1,159 @@
+
+.comments
+  padding-top: 60px
+  padding-bottom: 30px
+  background-color: $light
+  &__container
+    max-width: 750px
+    margin-left: 210px
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    display: flex
+    align-items: baseline
+  &__subtitle
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
+    font-size: 40px
+    line-height: 50px
+    color: $dark
+    margin-bottom: 30px
+    margin-right: 10px
+  &__number
+    font-size: 40px
+    line-height: 50px
+    color: $lightgray
+  &__button
+    width: 228px
+    color: $dark
+    padding: 6px 20px
+    border: 1px solid $line
+    border-radius: 20px
+    text-align: center
+    &--hidden
+      display: none !important
+  &__icon
+    position: relative
+    top: 2px
+    margin-right: 7px
+  &__item
+    display: none
+    padding-top: 17px
+    border-top: 1px solid $line
+    &--visible
+      display: flex !important
+  &__avatar
+    display: contents
+    &-img
+      width: 75px
+      height: 77px
+      object-fit: cover
+      border-radius: 50%
+      margin-right: 15px
+      &--position
+        margin-right: 21px
+        margin-bottom: 48px
+  &__message
+    display: block
+    font-size: 18px
+    line-height: 30px
+    margin-top: 15px
+    margin-bottom: 9px
+  &__content
+    max-width: 570px
+  &__name
+    position: relative
+    top: 2px
+    margin-right: 4px
+  &__meta
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+  &__answer
+    color: $dark
+    margin-right: 15px
+  &__image
+    position: relative
+    top: 3px
+    margin-right: 5px
+  &__like
+    &--green
+      color: $green
+    &--red
+      color: $red
+    &-image
+      transform: rotate(180deg)
+      position: relative
+      top: 3px
+      margin-right: 11px
+  &__replies
+    padding-left: 90px
+  &__button
+    &-load
+      width: 100%
+      min-height: 47px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid $line
+      border-radius: 25px
+      margin-bottom: 60px
+      color: $dark
+  &__loading
+    margin-right: 5px
+    margin-left: 25px
+  &__content
+    &-two
+      display: flex
+      align-items: center
+      background: #F5F5F5
+      border-radius: 10px
+      padding: 7px 39px 37px 30px
+    &-info
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        display: block
+        width: 12px
+        height: 12px
+        background: white
+        top: 94px
+        left: -6px
+        transform: rotate(45deg)
+        border-left: 1px solid #D9DADB
+        border-bottom: 1px solid #D9DADB
+    &-title
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 15px
+      color: $dark
+      margin-top: 23px
+    &-button
+      text-decoration: none
+      color: $light
+      padding: 10px 20px
+      background-color: $blue
+      border-radius: 20px
+      margin-left: 3px
+    &-arrow
+      margin-left: 5px
+  &__textarea
+    width: 585px
+    background-color: $light
+    border-radius: 6px
+    min-height: 130px
+    border: 1px solid $line
+    overflow-y: auto
+    resize: none
+    outline: none
+    margin-bottom: 11px
+    padding: 10px
+.dislike
+  margin-left: 10px
+  position: relative
+  top: 2px

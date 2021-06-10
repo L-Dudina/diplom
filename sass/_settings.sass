@@ -38,6 +38,7 @@ a
 button
   cursor: pointer
   outline: none
+  border: none
 
 input, textarea
   color: $text-color
@@ -110,3 +111,12 @@ input, textarea
   padding: 13px 18px
   border-radius: 10px
   z-index: 99
+.failed
+  color: $red
+  border-bottom: 1px solid $red
+  font-size: 12px
+label.failed
+  position: absolute
+  margin-top: 42px
+  &__message
+    margin-top: 130px !important

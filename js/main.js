@@ -5,7 +5,18 @@ $(document).ready(function () {
     }
   });
 
-//  Мобильное меню
+  // load comments
+  $(".comments__item").slice(0, 4).addClass("comments__item--visible");
+  $("#loadMore").on('click', function(event){
+    event.preventDefault();
+
+    $(".comments__item:hidden").slice(0, 4).slideDown().addClass("comments__item--visible");
+
+    var count = $(".comments__item:hidden").length;
+    if(count === 0) $("#loadMore").addClass("comments__button--hidden")
+  });
+  
+  //  Мобильное меню
   var menuButton = $(".menu-button"); 
   menuButton.on("click", function () {
     $(".navbar-menu").toggleClass("navbar-menu--visible");
@@ -64,6 +75,18 @@ $(document).ready(function () {
           required: "Вы не указали Ваш email",
           email: "Формат email-адреса name@domain.com"
         },
+      }
+    })
+  });
+
+  $(".comments__content-info").each(function() {
+    $(this).validate({
+      errorClass: "invalid failed__message",
+      messages: {
+        message: {
+          required: "Минимальное количество символов: 100",
+          minlength: "Минимальное количество символов: 100"
+        }
       }
     })
   });
