@@ -14,44 +14,41 @@
     <link rel="stylesheet" href="css/fixed.css" />
   </head>
   <body>
-    <header class="navbar navbar--mobile--fixed">
+    <header class="navbar navbar--light navbar--mobile--fixed">
       <div class="navbar-button">
         <div class="container">
-          <div class="navbar-box">
+          <div class="navbar-box navbar-box--mr">
             <a href="index.html" class="logo">
-              <img src="img/horizontal-logo.svg" alt="Logo: Universal" class="logo__image" />
+              <img src="img/logo-blue.svg" alt="Logo: Universal" class="logo__image" />
             </a>
             <div class="navbar-menu">
               <ul class="navbar-menu__block navbar-menu__block--mobile--visible">
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#articles" class="navbar-menu__link">Статьи</a>
+                  <a href="index.html#articles" class="navbar-menu__link navbar-menu__link--gray">Статьи</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#news" class="navbar-menu__link">Новости</a>
+                  <a href="index.html#news" class="navbar-menu__link navbar-menu__link--gray">Новости</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="index.html#hot" class="navbar-menu__link">Горячее</a>
+                  <a href="#footer" class="navbar-menu__link navbar-menu__link--gray">Курсы</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="#footer" class="navbar-menu__link">HTML</a>
+                  <a href="#footer" class="navbar-menu__link navbar-menu__link--gray">HTML</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="#footer" class="navbar-menu__link">CSS</a>
+                  <a href="#footer" class="navbar-menu__link navbar-menu__link--gray">CSS</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="#footer" class="navbar-menu__link">JavaScript</a>
+                  <a href="#footer" class="navbar-menu__link navbar-menu__link--gray">JavaScript</a>
                 </li>
                 <li class="navbar-menu__item navbar-menu__item--link">
-                  <a href="#footer" class="navbar-menu__link">Web Design</a>
+                  <a href="#footer" class="navbar-menu__link navbar-menu__link--gray">Web Design</a>
                 </li>
               </ul>
               <!-- /.navbar-menu  -->
               <a href="#" data-toggle="modal" class="button navbar__button navbar__button--mobile--visible">
                 ОСТАВИТЬ ЗАЯВКУ
               </a>
-              <!-- <button data-toggle="modal" class="button navbar__button navbar__button--mobile--visible" type="submit">
-                ОСТАВИТЬ ЗАЯВКУ
-              </button> -->
             </div>
             <!-- /.navbar__button  -->
             <button class="menu-button navbar-box__menu-button">
@@ -252,7 +249,7 @@
           ><img src="img/Loading.svg" alt="Icon: loading" class="comments__loading" />загрузить еще</a
         >
         <div class="comments__content-two">
-          <div class="comments__avatar">
+          <div class="comments__avatar comments__avatar--position">
             <img
               src="img/comment-avatar-5.png"
               alt="Аватар"
@@ -261,7 +258,7 @@
           </div>
           <form id="message" action="send.php" method="POST" class="comments__content-info">
             <h2 class="comments__content-title">Что вы думаете на этот счет?</h2>
-            <textarea class="comments__textarea" type="text" minlength="100" name="message" required></textarea>
+            <textarea class="comments__textarea text" minlength="100" name="message" required></textarea>
             <button class="button comments__content-button subtitle" type="submit">
               Отправить <img src="img/Arrow.svg" alt="Icon: arrow" class="comments__content-arrow" />
             </button>
@@ -354,7 +351,7 @@
                 <a href="#" class="footer-block__link subtitle">Реклама</a>
               </li>
               <li class="footer-block__item">
-                <a href="#footer" data-toggle="modal" class="footer-block__link subtitle">Обратная связь</a>
+                <a href="#footer" data-toggle="modal" class="footer-block__link subtitle">Партнерство</a>
               </li>
             </ul>
           </div>

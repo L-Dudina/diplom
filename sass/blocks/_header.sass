@@ -1,5 +1,7 @@
 .navbar
   background-color: $dark
+  &--light
+    background-color: $light
 
   &-box
     display: flex
@@ -7,7 +9,8 @@
     justify-content: space-between
     padding-top: 14px
     padding-bottom: 15px
-
+    &--mr
+      margin-right: 2px
     &__menu-button
       display: none
   &-menu
@@ -48,6 +51,8 @@
       font-size: 14px
       line-height: 20px
       font-weight: 900
+      &--gray
+        color: $lightgray
     &__item
       &--mobile
         &--visible

@@ -79,13 +79,25 @@ $(document).ready(function () {
     })
   });
 
+  // $(".comments__content-info").each(function() {
+  //   $(this).validate({
+  //     errorClass: "invalid failed__message",
+  //     messages: {
+  //       message: {
+  //         required: "Минимальное количество символов: 100",
+  //         minlength: "Минимальное количество символов: 100"
+  //       }
+  //     }
+  //   })
+  // });
+
   $(".comments__content-info").each(function() {
     $(this).validate({
-      errorClass: "invalid failed__message",
+      errorClass: "error",
       messages: {
         message: {
-          required: "Минимальное количество символов: 100",
-          minlength: "Минимальное количество символов: 100"
+          required: "Минимум 100 символов",
+          minlength: "Минимум 100 символов"
         }
       }
     })
